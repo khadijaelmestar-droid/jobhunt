@@ -1,0 +1,6342 @@
+{
+  "version": 1,
+  "companies": [
+    {
+      "slug": "1password",
+      "name": "1Password",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "9fin",
+      "name": "9Fin",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "abound",
+      "name": "Abound",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "abridge",
+      "name": "Abridge",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "acorns",
+      "name": "Acorns",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "acquisition",
+      "name": "Acquisition",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "aescape",
+      "name": "Aescape",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "alan",
+      "name": "Alan",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "alephalpha",
+      "name": "AlephAlpha",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "allium",
+      "name": "Allium",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "almedia",
+      "name": "Almedia",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "altimate",
+      "name": "Altimate",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ambiencehealthcare",
+      "name": "Ambiencehealthcare",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ambient.ai",
+      "name": "Ambient Ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ambrook",
+      "name": "Ambrook",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "anagram",
+      "name": "Anagram",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "anglehealth",
+      "name": "Anglehealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ansiblehealth",
+      "name": "Ansiblehealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "answersnow",
+      "name": "Answersnow",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "anterior",
+      "name": "Anterior",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "anyscale",
+      "name": "Anyscale",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "anything",
+      "name": "Anything",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "apron",
+      "name": "Apron",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "arb-interactive",
+      "name": "Arb interactive",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "arcade-ai",
+      "name": "Arcade ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ashby",
+      "name": "Ashby",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "aspora",
+      "name": "Aspora",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "astronomer",
+      "name": "Astronomer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ataraxis-ai",
+      "name": "Ataraxis ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "atomicsemi",
+      "name": "AtomicSemi",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "atroposhealth",
+      "name": "AtroposHealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "auctor",
+      "name": "Auctor",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "axiom",
+      "name": "Axiom",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "backmarket",
+      "name": "Backmarket",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "base",
+      "name": "Base",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "basis-ai",
+      "name": "Basis ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "bayesianhealth",
+      "name": "Bayesianhealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "beamimpact",
+      "name": "Beamimpact",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "bevel",
+      "name": "Bevel",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "bitvavo",
+      "name": "Bitvavo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "bjakcareer",
+      "name": "Bjakcareer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "bliro",
+      "name": "Bliro",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "block-labs",
+      "name": "Block labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "blockworks",
+      "name": "Blockworks",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "boon",
+      "name": "Boon",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "brainco",
+      "name": "Brainco",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "brainly",
+      "name": "Brainly",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "brale",
+      "name": "Brale",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "branchinsurance",
+      "name": "Branchinsurance",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "bree",
+      "name": "Bree",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "brellium",
+      "name": "Brellium",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "brigit",
+      "name": "Brigit",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "broccoli",
+      "name": "Broccoli",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "browserbase",
+      "name": "Browserbase",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "camber",
+      "name": "Camber",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cambio",
+      "name": "Cambio",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "campfire",
+      "name": "Campfire",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "candidhealth",
+      "name": "Candidhealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cape",
+      "name": "Cape",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "capimoney",
+      "name": "Capimoney",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cargo-one",
+      "name": "Cargo one",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cartesia",
+      "name": "Cartesia",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "casium",
+      "name": "Casium",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "catchafire",
+      "name": "Catchafire",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "catio",
+      "name": "Catio",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "causaly",
+      "name": "Causaly",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "centari",
+      "name": "Centari",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "chaidiscovery",
+      "name": "Chaidiscovery",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "character",
+      "name": "Character",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "clarium",
+      "name": "Clarium",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "classdojo",
+      "name": "ClassDojo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "claylabs",
+      "name": "Claylabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "climatiq",
+      "name": "Climatiq",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "clipboard",
+      "name": "Clipboard",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cluely",
+      "name": "Cluely",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cobot",
+      "name": "Cobot",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "coder",
+      "name": "Coder",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cohere",
+      "name": "Cohere",
+      "platform": "ashby",
+      "tags": [
+        "ai",
+        "nlp"
+      ]
+    },
+    {
+      "slug": "cointracker",
+      "name": "Cointracker",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "colonist",
+      "name": "Colonist",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "column",
+      "name": "Column",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "columntax",
+      "name": "Columntax",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "compa",
+      "name": "Compa",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "compound",
+      "name": "Compound",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "continua",
+      "name": "Continua",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "conversion",
+      "name": "Conversion",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "coworker",
+      "name": "Coworker",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "crosby",
+      "name": "Crosby",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "crusoe",
+      "name": "Crusoe",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "cursor",
+      "name": "Cursor",
+      "platform": "ashby",
+      "tags": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "cytora.com",
+      "name": "Cytora Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "dailypay",
+      "name": "Dailypay",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "dandy",
+      "name": "Dandy",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "davidenergy",
+      "name": "Davidenergy",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "decagon",
+      "name": "Decagon",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "deel",
+      "name": "Deel",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "deepl",
+      "name": "DeepL",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "delian",
+      "name": "Delian",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "deltia",
+      "name": "Deltia",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "dexmate",
+      "name": "Dexmate",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "diagrid",
+      "name": "Diagrid",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "directive",
+      "name": "Directive",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "distyl",
+      "name": "Distyl",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "diversified-botanics",
+      "name": "Diversified botanics",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "docker",
+      "name": "Docker",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "doss",
+      "name": "Doss",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "double",
+      "name": "Double",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "double-the-donation",
+      "name": "Double the donation",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "dourolabs.xyz",
+      "name": "Dourolabs Xyz",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "duna",
+      "name": "Duna",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "dust",
+      "name": "Dust",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "eigen-labs",
+      "name": "Eigen labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "eightsleep",
+      "name": "Eightsleep",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "platform": "ashby",
+      "tags": [
+        "ai",
+        "audio"
+      ]
+    },
+    {
+      "slug": "eliseai",
+      "name": "Eliseai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ellipsislabs",
+      "name": "Ellipsislabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ello",
+      "name": "Ello",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ema",
+      "name": "Ema",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "endex",
+      "name": "Endex",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "enode",
+      "name": "Enode",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "equip",
+      "name": "Equip",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ethglobal",
+      "name": "Ethglobal",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "everai",
+      "name": "Everai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "eye-security",
+      "name": "Eye security",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "fabrion",
+      "name": "Fabrion",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "filigran",
+      "name": "Filigran",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "finalroundai",
+      "name": "Finalroundai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "finni-health",
+      "name": "Finni health",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "firecrawl",
+      "name": "Firecrawl",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "first-resonance",
+      "name": "First resonance",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "firstround",
+      "name": "Firstround",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "fizz",
+      "name": "Fizz",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "flaglerhealth",
+      "name": "Flaglerhealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "focused",
+      "name": "Focused",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "foresite-labs-fl2024-006",
+      "name": "Foresite labs fl2024 006",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "freshpaint",
+      "name": "Freshpaint",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "fuel-cycle",
+      "name": "Fuel Cycle",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "gecko-robotics",
+      "name": "Gecko robotics",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "getground",
+      "name": "Getground",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "gimlet",
+      "name": "Gimlet",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "givebutter",
+      "name": "Givebutter",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "govdash",
+      "name": "Govdash",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "graphitehq",
+      "name": "Graphitehq",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "gridium",
+      "name": "Gridium",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "gridverify",
+      "name": "Gridverify",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hadrian-automation",
+      "name": "Hadrian automation",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "harvey",
+      "name": "Harvey",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "haus",
+      "name": "Haus",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hcompany",
+      "name": "Hcompany",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "healthaxis",
+      "name": "Healthaxis",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "heidihealth.com.au",
+      "name": "Heidihealth Com Au",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "herondata",
+      "name": "Herondata",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "higharc",
+      "name": "Higharc",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hims-and-hers",
+      "name": "Hims and hers",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hitpayapp.com",
+      "name": "Hitpayapp Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hiverge",
+      "name": "Hiverge",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hiya",
+      "name": "Hiya",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "homebase",
+      "name": "Homebase",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "homebound",
+      "name": "Homebound",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "honeydew",
+      "name": "Honeydew",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hopper",
+      "name": "Hopper",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hutora",
+      "name": "Hutora",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "hyperexponential",
+      "name": "Hyperexponential",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "imprint",
+      "name": "Imprint",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "infisical",
+      "name": "Infisical",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "influxdata",
+      "name": "Influxdata",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "inkeep",
+      "name": "Inkeep",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "interaction",
+      "name": "Interaction",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "invert",
+      "name": "Invert",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "iverify",
+      "name": "Iverify",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "january",
+      "name": "January",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "jerry.ai",
+      "name": "Jerry Ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "jimdo.com",
+      "name": "Jimdo Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "join9am",
+      "name": "Join9Am",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "juicebox",
+      "name": "Juicebox",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "jump",
+      "name": "Jump",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "keyrock",
+      "name": "Keyrock",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kin",
+      "name": "Kin",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kindred",
+      "name": "Kindred",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kodex",
+      "name": "Kodex",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kombo",
+      "name": "Kombo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kong",
+      "name": "Kong",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kovo",
+      "name": "Kovo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "kraken.com",
+      "name": "Kraken Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lambda",
+      "name": "Lambda",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "langchain",
+      "name": "Langchain",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "langdock",
+      "name": "Langdock",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lap",
+      "name": "Lap",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lawhive",
+      "name": "Lawhive",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lazer",
+      "name": "Lazer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "leantech",
+      "name": "LeanTech",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lemlist",
+      "name": "Lemlist",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "leona",
+      "name": "Leona",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "levelpath",
+      "name": "Levelpath",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "li.fi",
+      "name": "Li Fi",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lightfield",
+      "name": "Lightfield",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lindy",
+      "name": "Lindy",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "linear",
+      "name": "Linear",
+      "platform": "ashby",
+      "tags": [
+        "devtools",
+        "startup"
+      ]
+    },
+    {
+      "slug": "liquid-ai",
+      "name": "Liquid ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "livinghr",
+      "name": "Livinghr",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "loancrate",
+      "name": "Loancrate",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lorikeet",
+      "name": "Lorikeet",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lottie",
+      "name": "Lottie",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lovable",
+      "name": "Lovable",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lucidlink",
+      "name": "Lucidlink",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "lumbermanufactory",
+      "name": "Lumbermanufactory",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "magical",
+      "name": "Magical",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "magicschool",
+      "name": "Magicschool",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "maincode",
+      "name": "Maincode",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mainstay",
+      "name": "Mainstay",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "makai-labs",
+      "name": "Makai labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mangomint",
+      "name": "Mangomint",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "manusai",
+      "name": "Manusai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mapbox",
+      "name": "Mapbox",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "marianaminerals",
+      "name": "Marianaminerals",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "materialsecurity",
+      "name": "Materialsecurity",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "maticrobots",
+      "name": "MaticRobots",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mazedesign",
+      "name": "Mazedesign",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mdcalc",
+      "name": "Mdcalc",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "medal",
+      "name": "Medal",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "medely",
+      "name": "Medely",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mercor",
+      "name": "Mercor",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "metaview",
+      "name": "Metaview",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "middesk",
+      "name": "Middesk",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mobbin.com",
+      "name": "Mobbin Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "modal",
+      "name": "Modal",
+      "platform": "ashby",
+      "tags": [
+        "infra",
+        "ai"
+      ]
+    },
+    {
+      "slug": "modernfi",
+      "name": "Modernfi",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "monad.foundation",
+      "name": "Monad Foundation",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "monarchcrops",
+      "name": "Monarchcrops",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "monarchmoney",
+      "name": "Monarchmoney",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "monumental",
+      "name": "Monumental",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "moonlake",
+      "name": "Moonlake",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "moonshot-ai",
+      "name": "Moonshot ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "multiverse",
+      "name": "Multiverse",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "mural",
+      "name": "Mural",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "myedspacecareers",
+      "name": "Myedspacecareers",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "n1",
+      "name": "N1",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "n8n",
+      "name": "N8N",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nabla",
+      "name": "Nabla",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nabucasa",
+      "name": "Nabucasa",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nango",
+      "name": "Nango",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nelo",
+      "name": "Nelo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "neofinancial",
+      "name": "Neofinancial",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nerdwallet",
+      "name": "Nerdwallet",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "netboxlabs",
+      "name": "Netboxlabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nethermind",
+      "name": "Nethermind",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "netic",
+      "name": "Netic",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "neworbit",
+      "name": "Neworbit",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nextlinklabs",
+      "name": "Nextlinklabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nexus.xyz",
+      "name": "Nexus Xyz",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "noise-labs",
+      "name": "Noise labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "nomic",
+      "name": "Nomic",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "northwoodspace",
+      "name": "Northwoodspace",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "obviant",
+      "name": "Obviant",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "offdeal",
+      "name": "Offdeal",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "old-well-labs",
+      "name": "Old well labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "omafertility",
+      "name": "Omafertility",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "omi",
+      "name": "Omi",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "oneapp",
+      "name": "Oneapp",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "onebrief",
+      "name": "Onebrief",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ontic",
+      "name": "Ontic",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "openai",
+      "name": "OpenAI",
+      "platform": "ashby",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "slug": "openhomefoundation",
+      "name": "Openhomefoundation",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "openrouter",
+      "name": "Openrouter",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "opusclip",
+      "name": "Opusclip",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "orchard",
+      "name": "Orchard",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "oumi",
+      "name": "Oumi",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "paddle",
+      "name": "Paddle",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "padlet",
+      "name": "Padlet",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "parafin",
+      "name": "Parafin",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "parspec",
+      "name": "Parspec",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "patreon",
+      "name": "Patreon",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "pawp",
+      "name": "Pawp",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "percepta",
+      "name": "Percepta",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "permitflow",
+      "name": "Permitflow",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "platform": "ashby",
+      "tags": [
+        "ai",
+        "search"
+      ]
+    },
+    {
+      "slug": "phantom",
+      "name": "Phantom",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "phil",
+      "name": "Phil",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "photoroom",
+      "name": "Photoroom",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "physicalintelligence",
+      "name": "Physicalintelligence",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "planera",
+      "name": "Planera",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "playpowerlabs",
+      "name": "Playpowerlabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "polygon-labs",
+      "name": "Polygon labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "polymarket",
+      "name": "Polymarket",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "popl",
+      "name": "Popl",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "pplwise",
+      "name": "Pplwise",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "praxipal",
+      "name": "Praxipal",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "prelim",
+      "name": "Prelim",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "primary",
+      "name": "Primary",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "primeintellect",
+      "name": "PrimeIntellect",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "primer",
+      "name": "Primer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "procurify",
+      "name": "Procurify",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "prodigy-education",
+      "name": "Prodigy education",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "prompt",
+      "name": "Prompt",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "prorata",
+      "name": "Prorata",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "pylon-labs",
+      "name": "Pylon labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "quora",
+      "name": "Quora",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "qwilr",
+      "name": "Qwilr",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "radai",
+      "name": "Radai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "raiku",
+      "name": "Raiku",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "railway",
+      "name": "Railway",
+      "platform": "ashby",
+      "tags": [
+        "infra",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "rain",
+      "name": "Rain",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ramp",
+      "name": "Ramp",
+      "platform": "ashby",
+      "tags": [
+        "fintech"
+      ]
+    },
+    {
+      "slug": "reedsy",
+      "name": "Reedsy",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "reframesystems",
+      "name": "Reframesystems",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "relay",
+      "name": "Relay",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "renuity",
+      "name": "Renuity",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "replicant",
+      "name": "Replicant",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "replit",
+      "name": "Replit",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "resend",
+      "name": "Resend",
+      "platform": "ashby",
+      "tags": [
+        "email",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "revic",
+      "name": "Revic",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "rho",
+      "name": "Rho",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "ridealso",
+      "name": "Ridealso",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "rilla",
+      "name": "Rilla",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "roadsurfer.com",
+      "name": "Roadsurfer Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "root-access",
+      "name": "Root access",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "rula",
+      "name": "Rula",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sagelabs.ai",
+      "name": "Sagelabs Ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sardine",
+      "name": "Sardine",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "satispay",
+      "name": "Satispay",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "savvy",
+      "name": "Savvy",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "scalemath",
+      "name": "Scalemath",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "schoolhouse-world",
+      "name": "Schoolhouse world",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "scribe",
+      "name": "Scribe",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "secfix",
+      "name": "Secfix",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "seconddinner",
+      "name": "SecondDinner",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sentient",
+      "name": "Sentient",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "serif",
+      "name": "Serif",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sesame",
+      "name": "Sesame",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sierra",
+      "name": "Sierra",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "silver",
+      "name": "Silver",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "skimmer",
+      "name": "Skimmer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sleeper",
+      "name": "Sleeper",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "socure",
+      "name": "Socure",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sola",
+      "name": "Sola",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "solace",
+      "name": "Solace",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "solvd",
+      "name": "Solvd",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sonio",
+      "name": "Sonio",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sorcerer",
+      "name": "Sorcerer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "speckle",
+      "name": "Speckle",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "squads",
+      "name": "Squads",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "stack-ai",
+      "name": "Stack ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "stainlessapi",
+      "name": "Stainless",
+      "platform": "ashby",
+      "tags": [
+        "devtools",
+        "api"
+      ]
+    },
+    {
+      "slug": "starbridge",
+      "name": "Starbridge",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "stay22",
+      "name": "Stay22",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "substack",
+      "name": "Substack",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sully-ai",
+      "name": "Sully ai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "suno",
+      "name": "Suno",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sunrise",
+      "name": "Sunrise",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "superduper",
+      "name": "Superduper",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "suzy",
+      "name": "Suzy",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "sweedpos.com",
+      "name": "Sweedpos Com",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "switchboard-hiring",
+      "name": "Switchboard hiring",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "synthflow",
+      "name": "Synthflow",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tabs",
+      "name": "Tabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tacto",
+      "name": "Tacto",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "taktile",
+      "name": "Taktile",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "talentsafari",
+      "name": "Talentsafari",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tandem",
+      "name": "Tandem",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tandem-health",
+      "name": "Tandem health",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tavahealth",
+      "name": "Tavahealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "telli",
+      "name": "Telli",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tempo-xyz",
+      "name": "Tempo xyz",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "theam",
+      "name": "Theam",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "thewfsgroup",
+      "name": "Thewfsgroup",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "theydo",
+      "name": "Theydo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "thrill-labs",
+      "name": "Thrill labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tilthq",
+      "name": "Tilthq",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "timely",
+      "name": "Timely",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tin-can",
+      "name": "Tin can",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "titan",
+      "name": "Titan",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "tldr.tech",
+      "name": "Tldr Tech",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "top-hat",
+      "name": "Top hat",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "topline-pro",
+      "name": "Topline pro",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "trucksmarter",
+      "name": "Trucksmarter",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "truelogic",
+      "name": "Truelogic",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "turbopuffer",
+      "name": "Turbopuffer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "uipath",
+      "name": "Uipath",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "unify",
+      "name": "Unify",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "unit",
+      "name": "Unit",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "unto-labs",
+      "name": "Unto labs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "upvest",
+      "name": "Upvest",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "valeriehealth",
+      "name": "Valeriehealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "valon",
+      "name": "Valon",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vanilla",
+      "name": "Vanilla",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vanta",
+      "name": "Vanta",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vantageanalytics",
+      "name": "Vantageanalytics",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vetcove",
+      "name": "Vetcove",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "virtahealth",
+      "name": "Virtahealth",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vitalize",
+      "name": "Vitalize",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "voize",
+      "name": "Voize",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "voodoo",
+      "name": "Voodoo",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vooma",
+      "name": "Vooma",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "vorticity",
+      "name": "Vorticity",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "warp",
+      "name": "Warp",
+      "platform": "ashby",
+      "tags": [
+        "devtools",
+        "terminal"
+      ]
+    },
+    {
+      "slug": "wayflyer",
+      "name": "Wayflyer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "weave",
+      "name": "Weave",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "welltech",
+      "name": "Welltech",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "wetravel",
+      "name": "Wetravel",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "whatnot",
+      "name": "Whatnot",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "withclutch",
+      "name": "Withclutch",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "withpulley",
+      "name": "Withpulley",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "witnessai",
+      "name": "Witnessai",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "worldlabs",
+      "name": "Worldlabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "writer",
+      "name": "Writer",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "wundergraph",
+      "name": "WunderGraph",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "xlabs",
+      "name": "Xlabs",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "yazio",
+      "name": "Yazio",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "yepoda",
+      "name": "Yepoda",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "yutori",
+      "name": "Yutori",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "zapier",
+      "name": "Zapier",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "zefr",
+      "name": "Zefr",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "zencastr",
+      "name": "Zencastr",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "zeromark",
+      "name": "Zeromark",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "zippymh",
+      "name": "Zippymh",
+      "platform": "ashby",
+      "tags": []
+    },
+    {
+      "slug": "1password",
+      "name": "1Password",
+      "platform": "greenhouse",
+      "tags": [
+        "security",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "6sense",
+      "name": "6Sense",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "acryldata",
+      "name": "Acryldata",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "adyen",
+      "name": "Adyen",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "agency",
+      "name": "Agency",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "airbnb",
+      "name": "Airbnb",
+      "platform": "greenhouse",
+      "tags": [
+        "travel",
+        "marketplace"
+      ]
+    },
+    {
+      "slug": "airia",
+      "name": "Airia",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "airship",
+      "name": "Airship",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "airtable",
+      "name": "Airtable",
+      "platform": "greenhouse",
+      "tags": [
+        "productivity",
+        "database"
+      ]
+    },
+    {
+      "slug": "algolia",
+      "name": "Algolia",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "alliancedefendingfreedom",
+      "name": "Alliancedefendingfreedom",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "alma",
+      "name": "Alma",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "alphasense",
+      "name": "Alphasense",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "alumniventures",
+      "name": "Alumniventures",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "arizeai",
+      "name": "Arizeai",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "arrayeducation",
+      "name": "Arrayeducation",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "assemblyai",
+      "name": "Assemblyai",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "avride",
+      "name": "Avride",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "bedrockrobotics",
+      "name": "Bedrockrobotics",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "benchling",
+      "name": "Benchling",
+      "platform": "greenhouse",
+      "tags": [
+        "biotech",
+        "saas"
+      ]
+    },
+    {
+      "slug": "betterhelpcom",
+      "name": "Betterhelpcom",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "biograph",
+      "name": "Biograph",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "bitkraft",
+      "name": "Bitkraft",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "bloomerang",
+      "name": "Bloomerang",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "boulevard",
+      "name": "Boulevard",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "branch",
+      "name": "Branch",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "breezeairways",
+      "name": "Breezeairways",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "brex",
+      "name": "Brex",
+      "platform": "greenhouse",
+      "tags": [
+        "fintech"
+      ]
+    },
+    {
+      "slug": "cadwell",
+      "name": "Cadwell",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "candidly",
+      "name": "Candidly",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "careaccess",
+      "name": "Careaccess",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "chainguard",
+      "name": "Chainguard",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "checkr",
+      "name": "Checkr",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "chile",
+      "name": "Chile",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "clickhouse",
+      "name": "Clickhouse",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "platform": "greenhouse",
+      "tags": [
+        "infra",
+        "networking"
+      ]
+    },
+    {
+      "slug": "cobaltio",
+      "name": "Cobaltio",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "cockroachlabs",
+      "name": "Cockroach Labs",
+      "platform": "greenhouse",
+      "tags": [
+        "database",
+        "infra"
+      ]
+    },
+    {
+      "slug": "coda",
+      "name": "Coda",
+      "platform": "greenhouse",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "slug": "cogstateinc",
+      "name": "Cogstateinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "coherehealth",
+      "name": "Coherehealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "connectwise",
+      "name": "Connectwise",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "constructionresources",
+      "name": "Constructionresources",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "cortex",
+      "name": "Cortex",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "cresta",
+      "name": "Cresta",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "cribl",
+      "name": "Cribl",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "customerio",
+      "name": "Customerio",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "cybersheath",
+      "name": "Cybersheath",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "databricks",
+      "name": "Databricks",
+      "platform": "greenhouse",
+      "tags": [
+        "data",
+        "ai"
+      ]
+    },
+    {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "platform": "greenhouse",
+      "tags": [
+        "data",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "discord",
+      "name": "Discord",
+      "platform": "greenhouse",
+      "tags": [
+        "social",
+        "gaming"
+      ]
+    },
+    {
+      "slug": "downingcapitalgroup",
+      "name": "Downingcapitalgroup",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "duolingo",
+      "name": "Duolingo",
+      "platform": "greenhouse",
+      "tags": [
+        "education",
+        "consumer"
+      ]
+    },
+    {
+      "slug": "eclinicalsolutions",
+      "name": "Eclinicalsolutions",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "eliotcommunityhumanservices",
+      "name": "Eliotcommunityhumanservices",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "elitedentalpartnersllc",
+      "name": "Elitedentalpartnersllc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "endorlabs",
+      "name": "Endorlabs",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "enformion",
+      "name": "Enformion",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "everway",
+      "name": "Everway",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "ezcaterinc",
+      "name": "Ezcaterinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "fashionnova",
+      "name": "Fashionnova",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "platform": "greenhouse",
+      "tags": [
+        "design",
+        "tools"
+      ]
+    },
+    {
+      "slug": "figment",
+      "name": "Figment",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "firstprinciples",
+      "name": "Firstprinciples",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "flexport",
+      "name": "Flexport",
+      "platform": "greenhouse",
+      "tags": [
+        "logistics"
+      ]
+    },
+    {
+      "slug": "folxhealth",
+      "name": "Folxhealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "forafinancial",
+      "name": "Forafinancial",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "freenome",
+      "name": "Freenome",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "galileo",
+      "name": "Galileo",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "gassouth",
+      "name": "Gassouth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "gensyn",
+      "name": "Gensyn",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "platform": "greenhouse",
+      "tags": [
+        "devtools",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "givecampus",
+      "name": "Givecampus",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "givewell",
+      "name": "Givewell",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "globalizationpartners",
+      "name": "Globalizationpartners",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "globalli",
+      "name": "Globalli",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "gomotive",
+      "name": "Gomotive",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "grafana-labs",
+      "name": "Grafana Labs",
+      "platform": "greenhouse",
+      "tags": [
+        "devops",
+        "monitoring",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "grafanalabs",
+      "name": "Grafanalabs",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "growtherapy",
+      "name": "Growtherapy",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "gusto",
+      "name": "Gusto",
+      "platform": "greenhouse",
+      "tags": [
+        "hr",
+        "fintech"
+      ]
+    },
+    {
+      "slug": "hashicorp",
+      "name": "HashiCorp",
+      "platform": "greenhouse",
+      "tags": [
+        "devtools",
+        "infra"
+      ]
+    },
+    {
+      "slug": "headway",
+      "name": "Headway",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "homelight",
+      "name": "Homelight",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "honeycomb",
+      "name": "Honeycomb",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "hugeinc",
+      "name": "Hugeinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "icemiller",
+      "name": "Icemiller",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "imagentechnologies",
+      "name": "Imagentechnologies",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "imbibeinc",
+      "name": "Imbibeinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "incidentiq",
+      "name": "Incidentiq",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "industrialelectricmanufacturing",
+      "name": "Industrialelectricmanufacturing",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "inflectionai",
+      "name": "Inflectionai",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "janes",
+      "name": "Janes",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "knowbe4",
+      "name": "Knowbe4",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "koalafi",
+      "name": "Koalafi",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "koleyjessen",
+      "name": "Koleyjessen",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "lithic",
+      "name": "Lithic",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "livescore9",
+      "name": "Livescore9",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "mantrahealth",
+      "name": "Mantrahealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "mavenclinic",
+      "name": "Mavenclinic",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "merceradvisors",
+      "name": "Merceradvisors",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "merge",
+      "name": "Merge",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "midihealth",
+      "name": "Midihealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "milliondollarbabyco",
+      "name": "Milliondollarbabyco",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "miro",
+      "name": "Miro",
+      "platform": "greenhouse",
+      "tags": [
+        "collaboration",
+        "design"
+      ]
+    },
+    {
+      "slug": "modernhealth",
+      "name": "Modernhealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "moloco",
+      "name": "Moloco",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "monzo",
+      "name": "Monzo",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "monzoreferrals",
+      "name": "Monzoreferrals",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "morganmorganjobsapplynow",
+      "name": "Morganmorganjobsapplynow",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "morganmorganstudents",
+      "name": "Morganmorganstudents",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "morganmorgansummer",
+      "name": "Morganmorgansummer",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "mozilla",
+      "name": "Mozilla",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "nerdwallet",
+      "name": "NerdWallet",
+      "platform": "greenhouse",
+      "tags": [
+        "fintech"
+      ]
+    },
+    {
+      "slug": "nerostechnologies",
+      "name": "Nerostechnologies",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "nflcareers",
+      "name": "Nflcareers",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "ngrokinc",
+      "name": "Ngrokinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "niraenergy",
+      "name": "Niraenergy",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "oliverseapac",
+      "name": "Oliverseapac",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "omadahealth",
+      "name": "Omadahealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "oneimaging",
+      "name": "Oneimaging",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "opploans",
+      "name": "Opploans",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "orkes",
+      "name": "Orkes",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "oura",
+      "name": "Oura",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "pagerduty",
+      "name": "PagerDuty",
+      "platform": "greenhouse",
+      "tags": [
+        "devops",
+        "monitoring"
+      ]
+    },
+    {
+      "slug": "pairteam",
+      "name": "Pairteam",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "parachutehealth",
+      "name": "Parachutehealth",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "pendo",
+      "name": "Pendo",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "penninteractive",
+      "name": "Penninteractive",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "pingidentity",
+      "name": "Pingidentity",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "plaid",
+      "name": "Plaid",
+      "platform": "greenhouse",
+      "tags": [
+        "fintech",
+        "api"
+      ]
+    },
+    {
+      "slug": "planetscale",
+      "name": "Planetscale",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "plootocareers",
+      "name": "Plootocareers",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "poka",
+      "name": "Poka",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "pokemoncareers",
+      "name": "Pokemoncareers",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "pomelocare",
+      "name": "Pomelocare",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "possiblefinancialinc",
+      "name": "Possiblefinancialinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "postman",
+      "name": "Postman",
+      "platform": "greenhouse",
+      "tags": [
+        "devtools",
+        "api"
+      ]
+    },
+    {
+      "slug": "postscript",
+      "name": "Postscript",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "praxent",
+      "name": "Praxent",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "qualifieddigital",
+      "name": "Qualifieddigital",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "quince",
+      "name": "Quince",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "rcxsports",
+      "name": "Rcxsports",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "realchemistry",
+      "name": "Realchemistry",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "recharge",
+      "name": "Recharge",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "recidiviz",
+      "name": "Recidiviz",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "reddit",
+      "name": "Reddit",
+      "platform": "greenhouse",
+      "tags": [
+        "social",
+        "consumer"
+      ]
+    },
+    {
+      "slug": "redwoodmaterials",
+      "name": "Redwoodmaterials",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "remotecom",
+      "name": "Remotecom",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "samsara",
+      "name": "Samsara",
+      "platform": "greenhouse",
+      "tags": [
+        "iot",
+        "logistics"
+      ]
+    },
+    {
+      "slug": "sandstonecare",
+      "name": "Sandstonecare",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "sayari",
+      "name": "Sayari",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "seamlessai",
+      "name": "Seamlessai",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "seyond",
+      "name": "Seyond",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "sfox",
+      "name": "Sfox",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "shopfully",
+      "name": "Shopfully",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "shopmy",
+      "name": "Shopmy",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "sigmacomputing",
+      "name": "Sigmacomputing",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "simplesense",
+      "name": "Simplesense",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "smarterdx",
+      "name": "Smarterdx",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "smartlyio",
+      "name": "Smartlyio",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "snyk",
+      "name": "Snyk",
+      "platform": "greenhouse",
+      "tags": [
+        "security",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "sonyinteractiveentertainmentglobal",
+      "name": "Sonyinteractiveentertainmentglobal",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "sonypicturesanimation",
+      "name": "Sonypicturesanimation",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "splashfinancial",
+      "name": "Splashfinancial",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "squarespace",
+      "name": "Squarespace",
+      "platform": "greenhouse",
+      "tags": [
+        "web",
+        "cms"
+      ]
+    },
+    {
+      "slug": "stackadapt",
+      "name": "Stackadapt",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "stanley1913-us",
+      "name": "Stanley1913 us",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "stubhubinc",
+      "name": "Stubhubinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "temporaltechnologies",
+      "name": "Temporaltechnologies",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "thegershagency",
+      "name": "Thegershagency",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "thenewyorktimes",
+      "name": "Thenewyorktimes",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "thinkingmachines",
+      "name": "Thinkingmachines",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "threatlocker",
+      "name": "Threatlocker",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "tines",
+      "name": "Tines",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "togetherai",
+      "name": "Togetherai",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "tomorrow",
+      "name": "Tomorrow",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "topsteptrader",
+      "name": "Topsteptrader",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "torq",
+      "name": "Torq",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "trufru",
+      "name": "Trufru",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "turing",
+      "name": "Turing",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "umaeducationinc",
+      "name": "Umaeducationinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "upwork",
+      "name": "Upwork",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "urbansportsclub",
+      "name": "Urbansportsclub",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "usenourish",
+      "name": "Usenourish",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "vanta",
+      "name": "Vanta",
+      "platform": "greenhouse",
+      "tags": [
+        "security",
+        "compliance"
+      ]
+    },
+    {
+      "slug": "veratherapeuticsinc",
+      "name": "Veratherapeuticsinc",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "virtru",
+      "name": "Virtru",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "volterapower",
+      "name": "Volterapower",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "webflow",
+      "name": "Webflow",
+      "platform": "greenhouse",
+      "tags": [
+        "web",
+        "design"
+      ]
+    },
+    {
+      "slug": "wecommunications",
+      "name": "Wecommunications",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "weedmaps77",
+      "name": "Weedmaps77",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "weinsteinproperties",
+      "name": "Weinsteinproperties",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "winhomeinspection",
+      "name": "Winhomeinspection",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "wisetack",
+      "name": "Wisetack",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "workleap",
+      "name": "Workleap",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "wppmedia",
+      "name": "Wppmedia",
+      "platform": "greenhouse",
+      "tags": []
+    },
+    {
+      "slug": "zapier",
+      "name": "Zapier",
+      "platform": "greenhouse",
+      "tags": [
+        "automation",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "2brains",
+      "name": "2Brains",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "360learning",
+      "name": "360Learning",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "3pillarglobal",
+      "name": "3Pillarglobal",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "acceldata",
+      "name": "Acceldata",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "accesssoftek",
+      "name": "Accesssoftek",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "accurate",
+      "name": "Accurate",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "acord",
+      "name": "Acord",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "actian",
+      "name": "Actian",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "agatesoftware",
+      "name": "Agatesoftware",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "agile-defense",
+      "name": "Agile defense",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "agiloft",
+      "name": "Agiloft",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "airalo",
+      "name": "Airalo",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "airbyte",
+      "name": "Airbyte",
+      "platform": "lever",
+      "tags": [
+        "data",
+        "open-source"
+      ]
+    },
+    {
+      "slug": "aircall",
+      "name": "Aircall",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "airdna",
+      "name": "Airdna",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "airslate",
+      "name": "Airslate",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "aiwyn",
+      "name": "Aiwyn",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ajax",
+      "name": "Ajax",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ajccanada",
+      "name": "Ajccanada",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "akabrands",
+      "name": "Akabrands",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "aledade",
+      "name": "Aledade",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "aleph",
+      "name": "Aleph",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "algorex",
+      "name": "Algorex",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "alimentiv-2",
+      "name": "Alimentiv 2",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "allegiantair",
+      "name": "Allegiantair",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ampd-energy",
+      "name": "Ampd energy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "anavationllc",
+      "name": "Anavationllc",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "anchorage",
+      "name": "Anchorage",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "aofl",
+      "name": "Aofl",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "aperturehealth",
+      "name": "Aperturehealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "appen",
+      "name": "Appen",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "appfollow",
+      "name": "Appfollow",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "appsmith",
+      "name": "Appsmith",
+      "platform": "lever",
+      "tags": [
+        "devtools",
+        "low-code",
+        "open-source"
+      ]
+    },
+    {
+      "slug": "arbitrumfoundation",
+      "name": "Arbitrumfoundation",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "arborenergy",
+      "name": "Arborenergy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "arcadia",
+      "name": "Arcadia",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "articulate",
+      "name": "Articulate",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "assist-world",
+      "name": "Assist world",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "automatiq",
+      "name": "Automatiq",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "avero",
+      "name": "Avero",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "avertium",
+      "name": "Avertium",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "beghouconsulting",
+      "name": "Beghouconsulting",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "belvederetrading",
+      "name": "Belvederetrading",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "bespokepost",
+      "name": "Bespokepost",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "binance",
+      "name": "Binance",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "biointellisense",
+      "name": "Biointellisense",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "bisnow",
+      "name": "Bisnow",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "blablacar",
+      "name": "Blablacar",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "blinkux",
+      "name": "Blinkux",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "blue",
+      "name": "Blue",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "brevo",
+      "name": "Brevo",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "bricknetworks",
+      "name": "Bricknetworks",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "brooksrunning",
+      "name": "Brooksrunning",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "buckmason",
+      "name": "Buckmason",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "businesswire",
+      "name": "Businesswire",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "bv",
+      "name": "Bv",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cabonorte",
+      "name": "Cabonorte",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cal-com",
+      "name": "Cal.com",
+      "platform": "lever",
+      "tags": [
+        "scheduling",
+        "open-source"
+      ]
+    },
+    {
+      "slug": "canarytechnologies",
+      "name": "Canarytechnologies",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "capital",
+      "name": "Capital",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "carewest",
+      "name": "Carewest",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "celestia",
+      "name": "Celestia",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "certifid",
+      "name": "Certifid",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "certifyos",
+      "name": "Certifyos",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "certik",
+      "name": "Certik",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ciandt",
+      "name": "Ciandt",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "clarifyhealth",
+      "name": "Clarifyhealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cleanspark",
+      "name": "Cleanspark",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "clerk",
+      "name": "Clerk",
+      "platform": "lever",
+      "tags": [
+        "auth",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "coatesgroup",
+      "name": "Coatesgroup",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "coderio",
+      "name": "Coderio",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cogentanalytics",
+      "name": "Cogentanalytics",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "coingecko",
+      "name": "Coingecko",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "colibrigroup",
+      "name": "Colibrigroup",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "color",
+      "name": "Color",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "comply",
+      "name": "Comply",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "connectly",
+      "name": "Connectly",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cority",
+      "name": "Cority",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cprime",
+      "name": "Cprime",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "crestoperations",
+      "name": "Crestoperations",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "crumbl",
+      "name": "Crumbl",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "crypto",
+      "name": "Crypto",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "crytek",
+      "name": "Crytek",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cscgeneration-2",
+      "name": "Cscgeneration 2",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "csit",
+      "name": "Csit",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "curai",
+      "name": "Curai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "curri",
+      "name": "Curri",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cyderes",
+      "name": "Cyderes",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "cyngn",
+      "name": "Cyngn",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "deepgenomics",
+      "name": "Deepgenomics",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "deputy",
+      "name": "Deputy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "despegar",
+      "name": "Despegar",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "destinationknot",
+      "name": "Destinationknot",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dga",
+      "name": "Dga",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "disher",
+      "name": "Disher",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dlocal",
+      "name": "Dlocal",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dnc",
+      "name": "Dnc",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "doctrine",
+      "name": "Doctrine",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "doola",
+      "name": "Doola",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "doranjones",
+      "name": "Doranjones",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "doxel",
+      "name": "Doxel",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dreamgolf",
+      "name": "Dreamgolf",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dronedeploy",
+      "name": "Dronedeploy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dronesense",
+      "name": "Dronesense",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dscout",
+      "name": "Dscout",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "dutch",
+      "name": "Dutch",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "easystreetcap",
+      "name": "Easystreetcap",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "elfbeauty",
+      "name": "Elfbeauty",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "elty",
+      "name": "Elty",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "emilabs",
+      "name": "Emilabs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "enable",
+      "name": "Enable",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "endpointclinical",
+      "name": "Endpointclinical",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "epifi",
+      "name": "Epifi",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "equativ",
+      "name": "Equativ",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "erg",
+      "name": "Erg",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ethenalabs",
+      "name": "Ethenalabs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ethereumfoundation",
+      "name": "Ethereumfoundation",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "everbridge",
+      "name": "Everbridge",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "fanatee",
+      "name": "Fanatee",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "farfetch",
+      "name": "Farfetch",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "fellowshiplifeinc",
+      "name": "Fellowshiplifeinc",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "fi",
+      "name": "Fi",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "figfinancial",
+      "name": "Figfinancial",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "figment",
+      "name": "Figment",
+      "platform": "lever",
+      "tags": [
+        "blockchain",
+        "infra"
+      ]
+    },
+    {
+      "slug": "findhelp",
+      "name": "Findhelp",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "finn",
+      "name": "Finn",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "firemon",
+      "name": "Firemon",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "firsthand",
+      "name": "Firsthand",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "floqast",
+      "name": "Floqast",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "floridadems",
+      "name": "Floridadems",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "fly",
+      "name": "Fly.io",
+      "platform": "lever",
+      "tags": [
+        "infra",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "foodsmart",
+      "name": "Foodsmart",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "forourfuturefund",
+      "name": "Forourfuturefund",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "foxen",
+      "name": "Foxen",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "fullyvested",
+      "name": "Fullyvested",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "funxyz",
+      "name": "Funxyz",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gausslabs",
+      "name": "Gausslabs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "genefab",
+      "name": "Genefab",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gess",
+      "name": "Gess",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "getlabs",
+      "name": "Getlabs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "getmaple",
+      "name": "Getmaple",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "getsquire",
+      "name": "Getsquire",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gettyimages",
+      "name": "Gettyimages",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "glacierfish",
+      "name": "Glacierfish",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gocatalant",
+      "name": "Gocatalant",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gohighlevel",
+      "name": "Gohighlevel",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "goodamerican",
+      "name": "Goodamerican",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gorh",
+      "name": "Gorh",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gouconnect",
+      "name": "Gouconnect",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gravie",
+      "name": "Gravie",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "gravisrobotics",
+      "name": "Gravisrobotics",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "halter",
+      "name": "Halter",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hatchit",
+      "name": "Hatchit",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hcvt",
+      "name": "Hcvt",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hellomongoose",
+      "name": "Hellomongoose",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hermeus",
+      "name": "Hermeus",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "heyjane",
+      "name": "Heyjane",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hive",
+      "name": "Hive",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hopeservices",
+      "name": "Hopeservices",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hophr",
+      "name": "Hophr",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hottopic",
+      "name": "Hottopic",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "hypebeast",
+      "name": "Hypebeast",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "idt",
+      "name": "Idt",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "imo-online",
+      "name": "Imo online",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "includedhealth",
+      "name": "Includedhealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "indexventures",
+      "name": "Indexventures",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "inductiveautomation",
+      "name": "Inductiveautomation",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "influ2",
+      "name": "Influ2",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "insomniacookies",
+      "name": "Insomniacookies",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "instructure",
+      "name": "Instructure",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "investorflow",
+      "name": "Investorflow",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ircagroup",
+      "name": "Ircagroup",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "jamcity",
+      "name": "Jamcity",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "janeapp",
+      "name": "Janeapp",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "jellysmack",
+      "name": "Jellysmack",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "jetsupport",
+      "name": "Jetsupport",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "joshstoysandgames",
+      "name": "Joshstoysandgames",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "jumpcloud",
+      "name": "Jumpcloud",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "justwatch",
+      "name": "Justwatch",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "kasada",
+      "name": "Kasada",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "kavak",
+      "name": "Kavak",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "keboola",
+      "name": "Keboola",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "kenko",
+      "name": "Kenko",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "kiddom",
+      "name": "Kiddom",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "koalahealth",
+      "name": "Koalahealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "kraken123",
+      "name": "Kraken123",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lalamove",
+      "name": "Lalamove",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "levelai",
+      "name": "Levelai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "life",
+      "name": "Life",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lifeforce",
+      "name": "Lifeforce",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lifestance",
+      "name": "Lifestance",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lodgify",
+      "name": "Lodgify",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "loom",
+      "name": "Loom",
+      "platform": "lever",
+      "tags": [
+        "video",
+        "productivity"
+      ]
+    },
+    {
+      "slug": "loopreturns",
+      "name": "Loopreturns",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lrdgonline",
+      "name": "Lrdgonline",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lumivero",
+      "name": "Lumivero",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "luxurypresence",
+      "name": "Luxurypresence",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lvs1",
+      "name": "Lvs1",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "lyrahealth",
+      "name": "Lyrahealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "madhappy",
+      "name": "Madhappy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "magnetforensics",
+      "name": "Magnetforensics",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "marcusmillichap",
+      "name": "Marcusmillichap",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "massive-rocket",
+      "name": "Massive rocket",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "meesho",
+      "name": "Meesho",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mendix",
+      "name": "Mendix",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mercury",
+      "name": "Mercury",
+      "platform": "lever",
+      "tags": [
+        "fintech",
+        "banking"
+      ]
+    },
+    {
+      "slug": "merklescience",
+      "name": "Merklescience",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "metabase",
+      "name": "Metabase",
+      "platform": "lever",
+      "tags": [
+        "data",
+        "analytics",
+        "open-source"
+      ]
+    },
+    {
+      "slug": "metopera",
+      "name": "Metopera",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mhnchicago",
+      "name": "Mhnchicago",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mistplay",
+      "name": "Mistplay",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mistral",
+      "name": "Mistral",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "morningconsult",
+      "name": "Morningconsult",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mtspartners",
+      "name": "Mtspartners",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "mujininc",
+      "name": "Mujininc",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "muttdata",
+      "name": "Muttdata",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nacsworld",
+      "name": "Nacsworld",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nasafcu",
+      "name": "Nasafcu",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nava",
+      "name": "Nava",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nekohealth",
+      "name": "Nekohealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nelly",
+      "name": "Nelly",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "neon-inc",
+      "name": "Neon",
+      "platform": "lever",
+      "tags": [
+        "database",
+        "infra"
+      ]
+    },
+    {
+      "slug": "neowiz",
+      "name": "Neowiz",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "netlify",
+      "name": "Netlify",
+      "platform": "lever",
+      "tags": [
+        "web",
+        "devtools",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "netlight",
+      "name": "Netlight",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "netomi",
+      "name": "Netomi",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "newwestern",
+      "name": "Newwestern",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nimblerx",
+      "name": "Nimblerx",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "noblereach",
+      "name": "Noblereach",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "nominal",
+      "name": "Nominal",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "platform": "lever",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "slug": "odaseva",
+      "name": "Odaseva",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "oddin",
+      "name": "Oddin",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "offchainlabs",
+      "name": "Offchainlabs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "olo",
+      "name": "Olo",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "omnidian",
+      "name": "Omnidian",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "omnisend",
+      "name": "Omnisend",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "orcabiosystems",
+      "name": "Orcabiosystems",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "osedea",
+      "name": "Osedea",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "outreach",
+      "name": "Outreach",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "owner",
+      "name": "Owner",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "palantir",
+      "name": "Palantir",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "parcelvision",
+      "name": "Parcelvision",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "payabli",
+      "name": "Payabli",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "paytm",
+      "name": "Paytm",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pelmorex",
+      "name": "Pelmorex",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pendulum",
+      "name": "Pendulum",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pennylane",
+      "name": "Pennylane",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "people-ai",
+      "name": "People ai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pigment",
+      "name": "Pigment",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pingwind",
+      "name": "Pingwind",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pivotenergy",
+      "name": "Pivotenergy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "placemakr",
+      "name": "Placemakr",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "planetscale",
+      "name": "PlanetScale",
+      "platform": "lever",
+      "tags": [
+        "database"
+      ]
+    },
+    {
+      "slug": "plivo",
+      "name": "Plivo",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "portagepointpartners",
+      "name": "Portagepointpartners",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "porter",
+      "name": "Porter",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pphp",
+      "name": "Pphp",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pplm",
+      "name": "Pplm",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ppro",
+      "name": "Ppro",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ppsouthtexas",
+      "name": "Ppsouthtexas",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ppwi",
+      "name": "Ppwi",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "princesspolly",
+      "name": "Princesspolly",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "prisma",
+      "name": "Prisma",
+      "platform": "lever",
+      "tags": [
+        "database",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "prismic",
+      "name": "Prismic",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "prizeout",
+      "name": "Prizeout",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "propellerhead",
+      "name": "Propellerhead",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "proper",
+      "name": "Proper",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "prosper",
+      "name": "Prosper",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pryon",
+      "name": "Pryon",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pt78",
+      "name": "Pt78",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "pythian",
+      "name": "Pythian",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "qonto",
+      "name": "Qonto",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "quantco-",
+      "name": "Quantco ",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "quantlane",
+      "name": "Quantlane",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "quartzy",
+      "name": "Quartzy",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "questanalytics",
+      "name": "Questanalytics",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "rackspace",
+      "name": "Rackspace",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "raine",
+      "name": "Raine",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "ramp",
+      "name": "Ramp",
+      "platform": "lever",
+      "tags": [
+        "fintech"
+      ]
+    },
+    {
+      "slug": "rapidai",
+      "name": "Rapidai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "raptv",
+      "name": "Raptv",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "redsox",
+      "name": "Redsox",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "regalvoice",
+      "name": "Regalvoice",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "remedyproductstudio",
+      "name": "Remedyproductstudio",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "remofirst",
+      "name": "Remofirst",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "render",
+      "name": "Render",
+      "platform": "lever",
+      "tags": [
+        "infra",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "replit",
+      "name": "Replit",
+      "platform": "lever",
+      "tags": [
+        "devtools",
+        "education"
+      ]
+    },
+    {
+      "slug": "restaurant365",
+      "name": "Restaurant365",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "retired",
+      "name": "Retired",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "retool",
+      "name": "Retool",
+      "platform": "lever",
+      "tags": [
+        "devtools",
+        "low-code"
+      ]
+    },
+    {
+      "slug": "revefi",
+      "name": "Revefi",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "revinate",
+      "name": "Revinate",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "rightsideup",
+      "name": "Rightsideup",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "rookcoffee",
+      "name": "Rookcoffee",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "rover",
+      "name": "Rover",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "rudderstack",
+      "name": "RudderStack",
+      "platform": "lever",
+      "tags": [
+        "data",
+        "analytics"
+      ]
+    },
+    {
+      "slug": "rws",
+      "name": "Rws",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "safetyculture-2",
+      "name": "Safetyculture 2",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "salvohealth",
+      "name": "Salvohealth",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sambatv",
+      "name": "Sambatv",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sandboxvr",
+      "name": "Sandboxvr",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sanity-io",
+      "name": "Sanity",
+      "platform": "lever",
+      "tags": [
+        "cms",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "saronic",
+      "name": "Saronic",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "saviynt",
+      "name": "Saviynt",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "scale3c",
+      "name": "Scale3C",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "scaleway",
+      "name": "Scaleway",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "seaportglobal",
+      "name": "Seaportglobal",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sensortower",
+      "name": "Sensortower",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sep",
+      "name": "Sep",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "seven-starling",
+      "name": "Seven starling",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sfgiants",
+      "name": "Sfgiants",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sfmoma",
+      "name": "Sfmoma",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "shieldai",
+      "name": "Shieldai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "shyftlabs",
+      "name": "Shyftlabs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "siepe",
+      "name": "Siepe",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "skyslope",
+      "name": "Skyslope",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "smarsh",
+      "name": "Smarsh",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "smart-working-solutions",
+      "name": "Smart working solutions",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "solidcore",
+      "name": "Solidcore",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sonarsource",
+      "name": "Sonarsource",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "spear-ai",
+      "name": "Spear ai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "spotify",
+      "name": "Spotify",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "starkbank",
+      "name": "Starkbank",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "straighterline",
+      "name": "Straighterline",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "stytch",
+      "name": "Stytch",
+      "platform": "lever",
+      "tags": [
+        "auth",
+        "api"
+      ]
+    },
+    {
+      "slug": "suger",
+      "name": "Suger",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sundaysfordogs",
+      "name": "Sundaysfordogs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sunshinesachs",
+      "name": "Sunshinesachs",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase",
+      "platform": "lever",
+      "tags": [
+        "database",
+        "open-source",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "super-com",
+      "name": "Super com",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "supernovacompanies",
+      "name": "Supernovacompanies",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "superside",
+      "name": "Superside",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "swapcard",
+      "name": "Swapcard",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "swile",
+      "name": "Swile",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "swissborg",
+      "name": "Swissborg",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "synmax",
+      "name": "Synmax",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "sysdig",
+      "name": "Sysdig",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "tackle",
+      "name": "Tackle",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "tailscale",
+      "name": "Tailscale",
+      "platform": "lever",
+      "tags": [
+        "networking",
+        "remote-first"
+      ]
+    },
+    {
+      "slug": "tala",
+      "name": "Tala",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "tavernresearch",
+      "name": "Tavernresearch",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "teikametrics",
+      "name": "Teikametrics",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "teleport",
+      "name": "Teleport",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "temporal-technologies",
+      "name": "Temporal",
+      "platform": "lever",
+      "tags": [
+        "devtools",
+        "infra"
+      ]
+    },
+    {
+      "slug": "theathletic",
+      "name": "Theathletic",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "theblockcrypto",
+      "name": "Theblockcrypto",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "theodo",
+      "name": "Theodo",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "thinkahead",
+      "name": "Thinkahead",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "tradeify",
+      "name": "Tradeify",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "trellis",
+      "name": "Trellis",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "trendyol",
+      "name": "Trendyol",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "tri",
+      "name": "Tri",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "trueml",
+      "name": "Trueml",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "truv",
+      "name": "Truv",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "tryriot",
+      "name": "Tryriot",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "unico",
+      "name": "Unico",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "upguard",
+      "name": "Upguard",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "upstox",
+      "name": "Upstox",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "usasurveyjob",
+      "name": "Usasurveyjob",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "valence",
+      "name": "Valence",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "valinor",
+      "name": "Valinor",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "veepee",
+      "name": "Veepee",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "venteur",
+      "name": "Venteur",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "vercel",
+      "name": "Vercel",
+      "platform": "lever",
+      "tags": [
+        "web",
+        "devtools"
+      ]
+    },
+    {
+      "slug": "veritasinv",
+      "name": "Veritasinv",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "vida",
+      "name": "Vida",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "voleon",
+      "name": "Voleon",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "voltai",
+      "name": "Voltai",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "wattpad",
+      "name": "Wattpad",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "waveapps",
+      "name": "Waveapps",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "wealthfront",
+      "name": "Wealthfront",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "wealthsimple",
+      "name": "Wealthsimple",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "welocalize",
+      "name": "Welocalize",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "weride",
+      "name": "Weride",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "whoop",
+      "name": "Whoop",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "winamax",
+      "name": "Winamax",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "windowsbyrba",
+      "name": "Windowsbyrba",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "wishpond",
+      "name": "Wishpond",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "workos",
+      "name": "Workos",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "workwave",
+      "name": "Workwave",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "woven-by-toyota",
+      "name": "Woven by toyota",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "wristcheck",
+      "name": "Wristcheck",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "wyetechllc",
+      "name": "Wyetechllc",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "xero",
+      "name": "Xero",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "yubico",
+      "name": "Yubico",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "yuno",
+      "name": "Yuno",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "zerohomes",
+      "name": "Zerohomes",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "zopa",
+      "name": "Zopa",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "zurigroup",
+      "name": "Zurigroup",
+      "platform": "lever",
+      "tags": []
+    },
+    {
+      "slug": "algolia",
+      "name": "Algolia",
+      "platform": "recruitee",
+      "tags": [
+        "search",
+        "api",
+        "eu"
+      ]
+    },
+    {
+      "slug": "contentful",
+      "name": "Contentful",
+      "platform": "recruitee",
+      "tags": [
+        "cms",
+        "eu"
+      ]
+    },
+    {
+      "slug": "datadog",
+      "name": "Datadog",
+      "platform": "recruitee",
+      "tags": [
+        "monitoring",
+        "devops"
+      ]
+    },
+    {
+      "slug": "doctolib",
+      "name": "Doctolib",
+      "platform": "recruitee",
+      "tags": [
+        "health",
+        "eu"
+      ]
+    },
+    {
+      "slug": "getaround",
+      "name": "Getaround",
+      "platform": "recruitee",
+      "tags": [
+        "mobility",
+        "eu"
+      ]
+    },
+    {
+      "slug": "gorgias",
+      "name": "Gorgias",
+      "platform": "recruitee",
+      "tags": [
+        "ecommerce",
+        "support",
+        "eu"
+      ]
+    },
+    {
+      "slug": "malt",
+      "name": "Malt",
+      "platform": "recruitee",
+      "tags": [
+        "freelance",
+        "marketplace",
+        "eu"
+      ]
+    },
+    {
+      "slug": "payfit",
+      "name": "PayFit",
+      "platform": "recruitee",
+      "tags": [
+        "hr",
+        "fintech",
+        "eu"
+      ]
+    },
+    {
+      "slug": "spendesk",
+      "name": "Spendesk",
+      "platform": "recruitee",
+      "tags": [
+        "fintech",
+        "eu"
+      ]
+    },
+    {
+      "slug": "swile",
+      "name": "Swile",
+      "platform": "recruitee",
+      "tags": [
+        "hr",
+        "eu"
+      ]
+    },
+    {
+      "slug": "deel",
+      "name": "Deel",
+      "platform": "rippling",
+      "tags": [
+        "hr",
+        "remote-first"
+      ]
+    }
+  ]
+}
