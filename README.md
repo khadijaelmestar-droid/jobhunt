@@ -4,6 +4,14 @@ A command-line tool that searches for jobs directly on company ATS (Applicant Tr
 
 Most companies post their open positions on platforms like Greenhouse, Lever, and Ashby before (or instead of) syndicating them to job boards. **jobhunt** queries these platforms directly, giving you access to thousands of hidden opportunities across the US and Europe.
 
+### Search across 1,000+ companies in seconds
+
+![jobhunt search "python" --remote](public/imgs/Screenshot_20260403_005951.png)
+
+### Auto-discover companies by region
+
+![jobhunt discover --region eu](public/imgs/Screenshot_20260403_005906.png)
+
 ## Why jobhunt?
 
 - **Jobs you won't find on LinkedIn** — Many companies only post on their ATS. Small startups, AI labs, and remote-first companies often skip job boards entirely.
