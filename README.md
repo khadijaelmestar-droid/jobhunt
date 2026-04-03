@@ -7,13 +7,13 @@ Most companies post their open positions on platforms like Greenhouse, Lever, an
 ### Search across 1,000+ companies in seconds
 
 <p align="center">
-  <img src="./public/imgs/Screenshot_20260403_005951.png" alt="jobhunt search python --remote" width="100%">
+  <img src="https://github.com/aouznini/jobhunt/blob/main/public/imgs/Screenshot_20260403_005951.png?raw=true" alt="jobhunt search python --remote" width="100%">
 </p>
 
 ### Auto-discover companies by region
 
 <p align="center">
-  <img src="./public/imgs/Screenshot_20260403_005906.png" alt="jobhunt discover --region eu" width="100%">
+  <img src="https://github.com/aouznini/jobhunt/blob/main/public/imgs/Screenshot_20260403_005906.png?raw=true" alt="jobhunt discover --region eu" width="100%">
 </p>
 
 ## Why jobhunt?
