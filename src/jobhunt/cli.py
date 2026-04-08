@@ -16,7 +16,7 @@ from jobhunt.models import ATSPlatform, Company, SearchQuery
 from jobhunt.providers import PROVIDERS
 from jobhunt.search import filter_jobs
 
-app = typer.Typer(help="Search for jobs across ATS platforms (Greenhouse, Lever, Ashby, Rippling, Recruitee)")
+app = typer.Typer(help="Search for jobs across ATS platforms (Greenhouse, Lever, Ashby, Rippling, Recruitee, Workable, SmartRecruiters, JazzHR, Breezy, Teamtailor, Homerun, BambooHR, Personio, and more)")
 companies_app = typer.Typer(help="Manage the company database")
 cache_app = typer.Typer(help="Manage the cache")
 app.add_typer(companies_app, name="companies")
@@ -121,11 +121,12 @@ def search(
 def discover(
     region: Optional[str] = typer.Option(None, "--region", "-r", help="Filter by region: eu, us, uk, remote"),
     platform: Optional[list[ATSPlatform]] = typer.Option(None, "--platform", "-p", help="Only discover for specific ATS platforms"),
-    source: Optional[str] = typer.Option(None, "--source", help="Source: 'perplexity' for AI discovery, or a custom CSV URL"),
+    source: Optional[str] = typer.Option(None, "--source", help="Source: perplexity, perplexity-deep, github-lists, aggregators, detect, all, or a CSV URL"),
     dry_run: bool = typer.Option(False, "--dry-run", help="Show what would be added without saving"),
     skip_validation: bool = typer.Option(False, "--skip-validation", help="Skip slug validation (faster, may include dead slugs)"),
     concurrency: int = typer.Option(50, "--concurrency", help="Max concurrent requests"),
     limit: Optional[int] = typer.Option(None, "--limit", help="Max companies to discover"),
+    urls_file: Optional[Path] = typer.Option(None, "--urls", help="File with career page URLs (one per line) for --source detect"),
 ) -> None:
     """Auto-discover companies from community sources or Perplexity AI."""
     db = CompanyDB()
@@ -141,6 +142,23 @@ def discover(
             limit=limit,
             db=db,
             existing_keys=existing_keys,
+        )
+        return
+
+    if source == "perplexity-deep":
+        _discover_perplexity_deep(
+            region=region, platform=platform, dry_run=dry_run,
+            skip_validation=skip_validation, concurrency=concurrency,
+            limit=limit, db=db, existing_keys=existing_keys,
+        )
+        return
+
+    if source in ("github-lists", "aggregators", "detect", "all"):
+        _discover_new_sources(
+            source=source, region=region, platform=platform,
+            dry_run=dry_run, skip_validation=skip_validation,
+            concurrency=concurrency, limit=limit, db=db,
+            existing_keys=existing_keys, urls_file=urls_file,
         )
         return
 
@@ -275,6 +293,220 @@ def _discover_perplexity(
         discovered = discovered[:limit]
 
     _display_and_save_discovered(discovered, region, dry_run, db, existing_keys)
+
+
+def _discover_perplexity_deep(
+    region: Optional[str],
+    platform: Optional[list[ATSPlatform]],
+    dry_run: bool,
+    skip_validation: bool,
+    concurrency: int,
+    limit: Optional[int],
+    db: CompanyDB,
+    existing_keys: set[tuple[str, str]],
+) -> None:
+    """Discover companies using enhanced Perplexity AI with industry-specific queries."""
+    from jobhunt.perplexity import discover_via_perplexity_deep
+    from jobhunt.discovery import DiscoveredCompany, validate_slug
+
+    exclude_slugs = {slug for _, slug in existing_keys}
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console,
+    ) as progress:
+        task = progress.add_task("Querying Perplexity AI (deep discovery)...", total=None)
+
+        candidates = asyncio.run(
+            discover_via_perplexity_deep(
+                platforms=platform or None,
+                region=region,
+                exclude_slugs=exclude_slugs,
+            )
+        )
+
+        progress.update(task, description=f"Found {len(candidates)} candidates from Perplexity (deep)")
+
+    if not candidates:
+        console.print("[yellow]No companies found via Perplexity deep discovery.[/yellow]")
+        return
+
+    new_candidates = [
+        c for c in candidates
+        if (c.platform.value, c.slug) not in existing_keys
+    ]
+
+    if not new_candidates:
+        console.print("[yellow]All discovered companies are already in the database.[/yellow]")
+        return
+
+    console.print(f"[green]Deep discovery found {len(new_candidates)} new candidates[/green]")
+
+    discovered = [
+        DiscoveredCompany(
+            slug=c.slug, name=c.name, platform=c.platform,
+            region_tags=[region] if region else ["discovered"],
+        )
+        for c in new_candidates
+    ]
+
+    if not skip_validation:
+        import httpx as httpx_mod
+
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            console=console,
+        ) as progress:
+            total = len(discovered)
+            task = progress.add_task(f"Validating {total} slugs...", total=None)
+            validated_count = 0
+
+            async def validate_all() -> None:
+                nonlocal validated_count
+                semaphore = asyncio.Semaphore(min(concurrency, 20))
+                async with httpx_mod.AsyncClient(follow_redirects=True, timeout=10.0) as client:
+                    async def validate_one(c: DiscoveredCompany) -> None:
+                        nonlocal validated_count
+                        await validate_slug(client, semaphore, c)
+                        validated_count += 1
+                        progress.update(task, description=f"Validating slugs ({validated_count}/{total})...")
+
+                    await asyncio.gather(*[validate_one(c) for c in discovered])
+
+            asyncio.run(validate_all())
+
+        valid_before = len(discovered)
+        discovered = [c for c in discovered if c.valid]
+        console.print(f"[dim]Validation: {len(discovered)}/{valid_before} slugs confirmed valid[/dim]")
+
+    if limit:
+        discovered = discovered[:limit]
+
+    _display_and_save_discovered(discovered, region, dry_run, db, existing_keys)
+
+
+def _discover_new_sources(
+    source: str,
+    region: Optional[str],
+    platform: Optional[list[ATSPlatform]],
+    dry_run: bool,
+    skip_validation: bool,
+    concurrency: int,
+    limit: Optional[int],
+    db: CompanyDB,
+    existing_keys: set[tuple[str, str]],
+    urls_file: Optional[Path] = None,
+) -> None:
+    """Discover companies from GitHub lists, aggregators, or ATS detection."""
+    from jobhunt.discovery import DiscoveredCompany, validate_slug
+
+    async def run_sources() -> list[DiscoveredCompany]:
+        results: list[DiscoveredCompany] = []
+
+        if source in ("github-lists", "all"):
+            from jobhunt.discovery_sources.github_lists import discover_from_github_lists
+            try:
+                found = await discover_from_github_lists(max_concurrent=concurrency)
+                console.print(f"[dim]GitHub lists: {len(found)} companies detected[/dim]")
+                results.extend(found)
+            except Exception as e:
+                console.print(f"[yellow]GitHub lists failed: {e}[/yellow]")
+
+        if source in ("aggregators", "all"):
+            from jobhunt.discovery_sources.aggregators import discover_from_aggregators
+            try:
+                found = await discover_from_aggregators(max_concurrent=concurrency)
+                console.print(f"[dim]Aggregators: {len(found)} companies detected[/dim]")
+                results.extend(found)
+            except Exception as e:
+                console.print(f"[yellow]Aggregators failed: {e}[/yellow]")
+
+        if source in ("detect", "all"):
+            if urls_file and urls_file.exists():
+                from jobhunt.discovery_sources import CareerPageEntry
+                from jobhunt.discovery_sources.ats_detector import detect_ats_batch
+                entries = []
+                for line in urls_file.read_text().strip().split("\n"):
+                    line = line.strip()
+                    if line and line.startswith("http"):
+                        name = line.split("//")[1].split("/")[0].split(".")[0]
+                        entries.append(CareerPageEntry(company_name=name, career_url=line))
+                if entries:
+                    found = await detect_ats_batch(entries, max_concurrent=concurrency)
+                    console.print(f"[dim]ATS detection: {len(found)} companies detected from {len(entries)} URLs[/dim]")
+                    results.extend(found)
+            elif source == "detect":
+                console.print("[yellow]--urls file required for 'detect' source[/yellow]")
+
+        return results
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console,
+    ) as progress:
+        task = progress.add_task(f"Running discovery source: {source}...", total=None)
+        all_discovered = asyncio.run(run_sources())
+
+    if not all_discovered:
+        console.print("[yellow]No companies discovered from selected sources.[/yellow]")
+        return
+
+    if platform:
+        all_discovered = [c for c in all_discovered if c.platform in platform]
+
+    all_discovered = [
+        c for c in all_discovered
+        if (c.platform.value, c.slug) not in existing_keys
+    ]
+
+    seen: set[tuple[str, str]] = set()
+    unique: list[DiscoveredCompany] = []
+    for c in all_discovered:
+        key = (c.platform.value, c.slug)
+        if key not in seen:
+            seen.add(key)
+            unique.append(c)
+    all_discovered = unique
+
+    console.print(f"[green]Found {len(all_discovered)} new unique companies[/green]")
+
+    if not skip_validation and all_discovered:
+        import httpx as httpx_mod
+
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            console=console,
+        ) as progress:
+            total = len(all_discovered)
+            task = progress.add_task(f"Validating {total} slugs...", total=None)
+            validated_count = 0
+
+            async def validate_all() -> None:
+                nonlocal validated_count
+                semaphore = asyncio.Semaphore(min(concurrency, 20))
+                async with httpx_mod.AsyncClient(follow_redirects=True, timeout=10.0) as client:
+                    async def validate_one(c: DiscoveredCompany) -> None:
+                        nonlocal validated_count
+                        await validate_slug(client, semaphore, c)
+                        validated_count += 1
+                        progress.update(task, description=f"Validating slugs ({validated_count}/{total})...")
+
+                    await asyncio.gather(*[validate_one(c) for c in all_discovered])
+
+            asyncio.run(validate_all())
+
+        valid_before = len(all_discovered)
+        all_discovered = [c for c in all_discovered if c.valid]
+        console.print(f"[dim]Validation: {len(all_discovered)}/{valid_before} slugs confirmed valid[/dim]")
+
+    if limit:
+        all_discovered = all_discovered[:limit]
+
+    _display_and_save_discovered(all_discovered, region, dry_run, db, existing_keys)
 
 
 def _display_and_save_discovered(
