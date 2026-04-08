@@ -403,25 +403,30 @@ def _discover_new_sources(
     from jobhunt.discovery import DiscoveredCompany, validate_slug
 
     async def run_sources() -> list[DiscoveredCompany]:
+        import logging
+        logging.basicConfig(level=logging.INFO, format="%(message)s")
+
         results: list[DiscoveredCompany] = []
 
         if source in ("github-lists", "all"):
             from jobhunt.discovery_sources.github_lists import discover_from_github_lists
             try:
+                console.print("[dim]Fetching GitHub awesome-lists...[/dim]")
                 found = await discover_from_github_lists(max_concurrent=concurrency)
-                console.print(f"[dim]GitHub lists: {len(found)} companies detected[/dim]")
+                console.print(f"[green]GitHub lists: {len(found)} companies detected[/green]")
                 results.extend(found)
             except Exception as e:
-                console.print(f"[yellow]GitHub lists failed: {e}[/yellow]")
+                console.print(f"[red]GitHub lists failed: {e}[/red]")
 
         if source in ("aggregators", "all"):
             from jobhunt.discovery_sources.aggregators import discover_from_aggregators
             try:
+                console.print("[dim]Fetching HN Who's Hiring + YC directory...[/dim]")
                 found = await discover_from_aggregators(max_concurrent=concurrency)
-                console.print(f"[dim]Aggregators: {len(found)} companies detected[/dim]")
+                console.print(f"[green]Aggregators: {len(found)} companies detected[/green]")
                 results.extend(found)
             except Exception as e:
-                console.print(f"[yellow]Aggregators failed: {e}[/yellow]")
+                console.print(f"[red]Aggregators failed: {e}[/red]")
 
         if source in ("detect", "all"):
             if urls_file and urls_file.exists():

@@ -9,7 +9,7 @@ import httpx
 
 from jobhunt.discovery import DiscoveredCompany
 from jobhunt.discovery_sources import CareerPageEntry
-from jobhunt.discovery_sources.ats_detector import detect_ats_batch
+from jobhunt.discovery_sources.ats_detector import check_url_for_ats, detect_ats_batch
 
 logger = logging.getLogger(__name__)
 
@@ -83,5 +83,23 @@ async def discover_from_github_lists(
             seen_urls.add(entry.career_url)
             unique.append(entry)
 
-    logger.info("Detecting ATS for %d unique career pages", len(unique))
-    return await detect_ats_batch(unique, max_concurrent=max_concurrent)
+    # Phase 1: Check URLs directly for ATS patterns (no HTTP needed)
+    direct_matches: list[DiscoveredCompany] = []
+    need_detection: list[CareerPageEntry] = []
+
+    for entry in unique:
+        match = check_url_for_ats(entry.career_url, entry.company_name)
+        if match:
+            direct_matches.append(match)
+        else:
+            need_detection.append(entry)
+
+    logger.info(
+        "GitHub lists: %d direct ATS URL matches, %d need HTML detection",
+        len(direct_matches), len(need_detection),
+    )
+
+    # Phase 2: Detect ATS from HTML for remaining entries
+    html_matches = await detect_ats_batch(need_detection, max_concurrent=max_concurrent)
+
+    return direct_matches + html_matches

@@ -9,7 +9,7 @@ import httpx
 
 from jobhunt.discovery import DiscoveredCompany
 from jobhunt.discovery_sources import CareerPageEntry
-from jobhunt.discovery_sources.ats_detector import detect_ats_batch
+from jobhunt.discovery_sources.ats_detector import check_url_for_ats, detect_ats_batch
 
 logger = logging.getLogger(__name__)
 
@@ -51,7 +51,10 @@ async def _fetch_hn_whos_hiring(client: httpx.AsyncClient) -> list[CareerPageEnt
         urls = re.findall(r'href="(https?://[^"]+)"', text)
         career_url = ""
         for url in urls:
-            if any(kw in url.lower() for kw in ["career", "jobs", "hiring", "work", "apply", "openings"]):
+            if any(kw in url.lower() for kw in ["career", "jobs", "hiring", "work", "apply", "openings",
+                                                  "lever.co", "greenhouse.io", "ashbyhq.com", "workable.com",
+                                                  "smartrecruiters.com", "teamtailor.com", "breezy.hr",
+                                                  "bamboohr.com", "personio.de", "homerun.co"]):
                 career_url = url
                 break
         if not career_url and urls:
@@ -111,6 +114,7 @@ async def discover_from_aggregators(
     if not all_entries:
         return []
 
+    # Deduplicate by URL
     seen: set[str] = set()
     unique: list[CareerPageEntry] = []
     for entry in all_entries:
@@ -118,5 +122,23 @@ async def discover_from_aggregators(
             seen.add(entry.career_url)
             unique.append(entry)
 
-    logger.info("Detecting ATS for %d unique career pages from aggregators", len(unique))
-    return await detect_ats_batch(unique, max_concurrent=max_concurrent)
+    # Phase 1: Check URLs directly for ATS patterns (no HTTP needed)
+    direct_matches: list[DiscoveredCompany] = []
+    need_detection: list[CareerPageEntry] = []
+
+    for entry in unique:
+        match = check_url_for_ats(entry.career_url, entry.company_name)
+        if match:
+            direct_matches.append(match)
+        else:
+            need_detection.append(entry)
+
+    logger.info(
+        "Aggregators: %d direct ATS URL matches, %d need HTML detection",
+        len(direct_matches), len(need_detection),
+    )
+
+    # Phase 2: Detect ATS from HTML for remaining entries
+    html_matches = await detect_ats_batch(need_detection, max_concurrent=max_concurrent)
+
+    return direct_matches + html_matches
