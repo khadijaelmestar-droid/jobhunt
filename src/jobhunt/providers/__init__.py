@@ -2,11 +2,13 @@ from __future__ import annotations
 
 from jobhunt.models import ATSPlatform
 from jobhunt.providers.ashby import AshbyProvider
+from jobhunt.providers.bamboohr import BambooHRProvider
 from jobhunt.providers.base import ATSProvider
 from jobhunt.providers.breezy import BreezyProvider
 from jobhunt.providers.greenhouse import GreenhouseProvider
 from jobhunt.providers.homerun import HomerunProvider
 from jobhunt.providers.jazzhr import JazzHRProvider
+from jobhunt.providers.personio import PersonioProvider
 from jobhunt.providers.lever import LeverProvider
 from jobhunt.providers.recruitee import RecruiteeProvider
 from jobhunt.providers.rippling import RipplingProvider
@@ -26,6 +28,8 @@ PROVIDERS: dict[ATSPlatform, ATSProvider] = {
     ATSPlatform.BREEZY: BreezyProvider(),
     ATSPlatform.TEAMTAILOR: TeamtailorProvider(),
     ATSPlatform.HOMERUN: HomerunProvider(),
+    ATSPlatform.BAMBOOHR: BambooHRProvider(),
+    ATSPlatform.PERSONIO: PersonioProvider(),
 }
 
 __all__ = ["PROVIDERS", "ATSProvider"]
