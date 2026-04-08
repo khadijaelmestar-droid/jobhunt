@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 from dataclasses import dataclass
 
 from jobhunt.models import ATSPlatform
@@ -166,7 +167,23 @@ async def query_perplexity(
         data = resp.json()
 
     content = data["choices"][0]["message"]["content"]
-    return json.loads(content)
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        # Perplexity sometimes returns truncated JSON — try to salvage partial results
+        return _repair_json(content)
+
+
+def _repair_json(raw: str) -> dict:
+    """Attempt to extract valid company entries from truncated JSON."""
+    # Try to find all complete {"name": "...", "slug": "..."} objects
+    companies = []
+    for m in re.finditer(
+        r'\{\s*"name"\s*:\s*"([^"]+)"\s*,\s*"slug"\s*:\s*"([^"]+)"\s*\}',
+        raw,
+    ):
+        companies.append({"name": m.group(1), "slug": m.group(2)})
+    return {"companies": companies}
 
 
 async def discover_via_perplexity(
