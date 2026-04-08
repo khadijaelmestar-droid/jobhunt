@@ -13,6 +13,18 @@ class ATSPlatform(StrEnum):
     ASHBY = "ashby"
     RIPPLING = "rippling"
     RECRUITEE = "recruitee"
+    WORKABLE = "workable"
+    SMARTRECRUITERS = "smartrecruiters"
+    JAZZHR = "jazzhr"
+    BREEZY = "breezy"
+    TEAMTAILOR = "teamtailor"
+    HOMERUN = "homerun"
+    BAMBOOHR = "bamboohr"
+    PERSONIO = "personio"
+    WORKDAY = "workday"
+    ICIMS = "icims"
+    TALEO = "taleo"
+    SUCCESSFACTORS = "successfactors"
 
 
 class Job(BaseModel):
@@ -38,6 +50,7 @@ class Company(BaseModel):
     platform: ATSPlatform
     tags: list[str] = []
     enabled: bool = True
+    base_url: str | None = None
 
 
 class CompanyDatabase(BaseModel):

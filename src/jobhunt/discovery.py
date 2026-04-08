@@ -20,6 +20,14 @@ VALIDATION_URLS: dict[ATSPlatform, str] = {
     ATSPlatform.LEVER: "https://api.lever.co/v0/postings/{slug}",
     ATSPlatform.ASHBY: "https://api.ashbyhq.com/posting-api/job-board/{slug}",
     ATSPlatform.RECRUITEE: "https://api.recruitee.com/c/{slug}/offers",
+    ATSPlatform.WORKABLE: "https://apply.workable.com/api/v1/widget/{slug}",
+    ATSPlatform.SMARTRECRUITERS: "https://api.smartrecruiters.com/v1/companies/{slug}/postings",
+    ATSPlatform.JAZZHR: "https://app.jazz.co/api/{slug}/jobs",
+    ATSPlatform.BREEZY: "https://{slug}.breezy.hr/json",
+    ATSPlatform.TEAMTAILOR: "https://{slug}.teamtailor.com/jobs",
+    ATSPlatform.HOMERUN: "https://{slug}.homerun.co",
+    ATSPlatform.BAMBOOHR: "https://{slug}.bamboohr.com/careers/list",
+    ATSPlatform.PERSONIO: "https://{slug}.jobs.personio.de/search",
 }
 
 # URL patterns to extract (platform, slug) from job URLs
@@ -28,6 +36,14 @@ _URL_PATTERNS: list[tuple[str, ATSPlatform]] = [
     (r"lever\.co/([a-zA-Z0-9_-]+)", ATSPlatform.LEVER),
     (r"ashbyhq\.com/([a-zA-Z0-9_.-]+)", ATSPlatform.ASHBY),
     (r"recruitee\.com/c/([a-zA-Z0-9_-]+)", ATSPlatform.RECRUITEE),
+    (r"apply\.workable\.com/([a-zA-Z0-9_-]+)", ATSPlatform.WORKABLE),
+    (r"smartrecruiters\.com/([a-zA-Z0-9_-]+)", ATSPlatform.SMARTRECRUITERS),
+    (r"jazz\.co/([a-zA-Z0-9_-]+)", ATSPlatform.JAZZHR),
+    (r"([a-zA-Z0-9_-]+)\.breezy\.hr", ATSPlatform.BREEZY),
+    (r"([a-zA-Z0-9_-]+)\.teamtailor\.com", ATSPlatform.TEAMTAILOR),
+    (r"([a-zA-Z0-9_-]+)\.homerun\.co", ATSPlatform.HOMERUN),
+    (r"([a-zA-Z0-9_-]+)\.bamboohr\.com", ATSPlatform.BAMBOOHR),
+    (r"([a-zA-Z0-9_-]+)\.jobs\.personio\.de", ATSPlatform.PERSONIO),
 ]
 
 _GREENHOUSE_SKIP_SLUGS = {"embed", "api", "v1", "boards", "job-boards"}

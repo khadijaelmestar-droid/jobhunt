@@ -35,6 +35,38 @@ _PLATFORM_HINTS: dict[ATSPlatform, str] = {
         "companies that use Rippling ATS for their job board. "
         "Return the company name and their Rippling board slug."
     ),
+    ATSPlatform.WORKABLE: (
+        "companies that use Workable ATS for hiring (their job boards are at apply.workable.com/<slug>). "
+        "Return the company name and the slug (the part after apply.workable.com/)."
+    ),
+    ATSPlatform.SMARTRECRUITERS: (
+        "companies that use SmartRecruiters ATS (their job boards are at jobs.smartrecruiters.com/<slug>). "
+        "Return the company name and the slug (the part after jobs.smartrecruiters.com/)."
+    ),
+    ATSPlatform.JAZZHR: (
+        "companies that use JazzHR ATS for hiring (at app.jazz.co/<slug> or similar). "
+        "Return the company name and the JazzHR slug."
+    ),
+    ATSPlatform.BREEZY: (
+        "companies that use Breezy HR ATS (their job boards are at <slug>.breezy.hr). "
+        "Return the company name and the subdomain slug."
+    ),
+    ATSPlatform.TEAMTAILOR: (
+        "companies that use Teamtailor ATS (their career sites are at <slug>.teamtailor.com or custom domains powered by Teamtailor). "
+        "Return the company name and the Teamtailor subdomain slug."
+    ),
+    ATSPlatform.HOMERUN: (
+        "companies that use Homerun ATS (their job boards are at <slug>.homerun.co). "
+        "Return the company name and the Homerun subdomain slug."
+    ),
+    ATSPlatform.BAMBOOHR: (
+        "companies that use BambooHR ATS (their career pages are at <slug>.bamboohr.com/careers). "
+        "Return the company name and the BambooHR subdomain slug."
+    ),
+    ATSPlatform.PERSONIO: (
+        "companies that use Personio ATS (their job boards are at <slug>.jobs.personio.de). "
+        "Return the company name and the Personio subdomain slug."
+    ),
 }
 
 _REGION_HINTS: dict[str, str] = {
