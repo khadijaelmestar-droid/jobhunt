@@ -218,3 +218,77 @@ async def discover_via_perplexity(
             )
 
     return all_candidates
+
+
+_INDUSTRIES = [
+    "tech", "fintech", "healthtech", "e-commerce", "SaaS",
+    "cybersecurity", "AI/ML", "biotech", "logistics", "edtech",
+]
+
+
+async def discover_via_perplexity_deep(
+    platforms: list[ATSPlatform] | None = None,
+    region: str | None = None,
+    industries: list[str] | None = None,
+    count_per_query: int = 50,
+    model: str = "sonar",
+    api_key: str | None = None,
+    exclude_slugs: set[str] | None = None,
+) -> list[PerplexityCandidate]:
+    """Enhanced discovery with industry-specific queries and iterative deepening.
+
+    Queries Perplexity for each platform x industry combination,
+    then does a follow-up "more like these" query excluding already-found slugs.
+    """
+    key = api_key or _get_api_key()
+    target_platforms = platforms or list(ATSPlatform)
+    target_industries = industries or _INDUSTRIES
+    all_candidates: list[PerplexityCandidate] = []
+    seen: set[tuple[str, str]] = set()
+    excluded = exclude_slugs or set()
+
+    for plat in target_platforms:
+        platform_hint = _PLATFORM_HINTS.get(plat, f"companies using {plat.value} ATS")
+        region_hint = _REGION_HINTS.get(region, "") if region else ""
+
+        for industry in target_industries:
+            prompt = (
+                f"List {count_per_query} {industry} {platform_hint} "
+                f"{region_hint} "
+                f"Only include companies you are confident about. "
+                f"The slug should be lowercase, using hyphens not spaces."
+            ).strip()
+
+            if excluded:
+                sample = list(excluded)[:20]
+                prompt += f" Exclude these already-known slugs: {', '.join(sample)}."
+
+            try:
+                result = await query_perplexity(prompt, model=model, api_key=key)
+            except Exception as e:
+                logger.warning("Perplexity query failed for %s/%s: %s", plat.value, industry, e)
+                continue
+
+            for c in result.get("companies", []):
+                name = c.get("name", "").strip()
+                slug = c.get("slug", "").strip().lower().replace(" ", "-")
+                if not name or not slug:
+                    continue
+                if slug in excluded:
+                    continue
+
+                dedup_key = (plat.value, slug)
+                if dedup_key in seen:
+                    continue
+                seen.add(dedup_key)
+
+                all_candidates.append(
+                    PerplexityCandidate(
+                        name=name,
+                        slug=slug,
+                        platform=plat,
+                        source_query=f"{industry}/{plat.value}",
+                    )
+                )
+
+    return all_candidates
