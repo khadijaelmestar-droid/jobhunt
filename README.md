@@ -7,13 +7,13 @@ Most companies post their open positions on platforms like Greenhouse, Lever, an
 ### Search across 1,000+ companies in seconds
 
 <p align="center">
-  <img src="https://github.com/aouznini/jobhunt/blob/main/public/imgs/Screenshot_20260403_005951.png?raw=true" alt="jobhunt search python --remote" width="100%">
+  <img src="https://github.com/khadijaelmestar-droid/jobhunt/blob/main/public/imgs/Screenshot_20260403_005951.png?raw=true" alt="jobhunt search python --remote" width="100%">
 </p>
 
 ### Auto-discover companies by region
 
 <p align="center">
-  <img src="https://github.com/aouznini/jobhunt/blob/main/public/imgs/Screenshot_20260403_005906.png?raw=true" alt="jobhunt discover --region eu" width="100%">
+  <img src="https://github.com/khadijaelmestar-droid/jobhunt/blob/main/public/imgs/Screenshot_20260403_005906.png?raw=true" alt="jobhunt discover --region eu" width="100%">
 </p>
 
 ## Why jobhunt?
@@ -150,7 +150,7 @@ jobhunt discover [OPTIONS]
 | `--platform NAME` | `-p` | Only discover for a specific ATS platform |
 | `--dry-run` | | Preview results without saving |
 | `--skip-validation` | | Skip API validation (faster, may include inactive companies) |
-| `--source URL` | | Use a custom community source URL |
+| `--source TEXT` | | `perplexity` for AI discovery, or a custom CSV URL |
 | `--concurrency N` | | Max concurrent requests (default: 50) |
 | `--limit N` | | Max companies to discover |
 
@@ -177,6 +177,48 @@ jobhunt discover --skip-validation
 # Discover US companies, max 100
 jobhunt discover --region us --limit 100
 ```
+
+### AI-powered discovery with Perplexity
+
+Use Perplexity AI to discover companies that aren't in community sources. Perplexity searches the web in real-time to find companies using specific ATS platforms.
+
+**Setup:**
+
+1. Get a Perplexity API key at [perplexity.ai/settings/api](https://www.perplexity.ai/settings/api)
+2. Set it in your environment:
+
+```bash
+export PERPLEXITY_API_KEY=pplx-your-key-here
+```
+
+**Usage:**
+
+```bash
+# Discover companies across all platforms
+jobhunt discover --source perplexity
+
+# Focus on a specific platform and region
+jobhunt discover --source perplexity --platform lever --region eu
+
+# Preview without saving
+jobhunt discover --source perplexity --region us --dry-run
+
+# Skip validation for faster results (may include inactive slugs)
+jobhunt discover --source perplexity --skip-validation
+
+# Limit results
+jobhunt discover --source perplexity --limit 50
+```
+
+**How it works:**
+
+1. Generates targeted prompts per platform and region (e.g. "List tech companies using Greenhouse ATS in Europe")
+2. Perplexity searches the web and returns structured company data with slugs
+3. Validates discovered slugs against ATS APIs
+4. Deduplicates against your existing database
+5. Asks for confirmation before saving
+
+**Cost:** ~$0.05 per query. A full scan (5 platforms x 4 regions) costs ~$1.
 
 ### Managing companies
 

@@ -23,6 +23,9 @@ env/
 # Claude Code local state
 .claude/
 
+# Pro (private — separate repo)
+src/pro/
+
 # Cache files
 *.json.gz
 

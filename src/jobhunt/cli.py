@@ -121,21 +121,34 @@ def search(
 def discover(
     region: Optional[str] = typer.Option(None, "--region", "-r", help="Filter by region: eu, us, uk, remote"),
     platform: Optional[list[ATSPlatform]] = typer.Option(None, "--platform", "-p", help="Only discover for specific ATS platforms"),
-    source: Optional[str] = typer.Option(None, "--source", help="Custom source URL (CSV)"),
+    source: Optional[str] = typer.Option(None, "--source", help="Source: 'perplexity' for AI discovery, or a custom CSV URL"),
     dry_run: bool = typer.Option(False, "--dry-run", help="Show what would be added without saving"),
     skip_validation: bool = typer.Option(False, "--skip-validation", help="Skip slug validation (faster, may include dead slugs)"),
     concurrency: int = typer.Option(50, "--concurrency", help="Max concurrent requests"),
     limit: Optional[int] = typer.Option(None, "--limit", help="Max companies to discover"),
 ) -> None:
-    """Auto-discover companies from community sources."""
+    """Auto-discover companies from community sources or Perplexity AI."""
+    db = CompanyDB()
+    existing_keys = db.get_all_keys()
+
+    if source == "perplexity":
+        _discover_perplexity(
+            region=region,
+            platform=platform,
+            dry_run=dry_run,
+            skip_validation=skip_validation,
+            concurrency=concurrency,
+            limit=limit,
+            db=db,
+            existing_keys=existing_keys,
+        )
+        return
+
     from jobhunt.discovery import DEFAULT_SOURCES, DiscoverySource, discover as run_discover
 
     sources = DEFAULT_SOURCES
     if source:
         sources = [DiscoverySource(name="Custom", url=source)]
-
-    db = CompanyDB()
-    existing_keys = db.get_all_keys()
 
     with Progress(
         SpinnerColumn(),
@@ -167,13 +180,117 @@ def discover(
     if limit:
         discovered = discovered[:limit]
 
+    _display_and_save_discovered(discovered, region, dry_run, db, existing_keys)
+
+
+def _discover_perplexity(
+    region: Optional[str],
+    platform: Optional[list[ATSPlatform]],
+    dry_run: bool,
+    skip_validation: bool,
+    concurrency: int,
+    limit: Optional[int],
+    db: CompanyDB,
+    existing_keys: set[tuple[str, str]],
+) -> None:
+    """Discover companies using Perplexity AI web search."""
+    from jobhunt.perplexity import discover_via_perplexity
+    from jobhunt.discovery import DiscoveredCompany, validate_slug
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console,
+    ) as progress:
+        task = progress.add_task("Querying Perplexity AI for companies...", total=None)
+
+        candidates = asyncio.run(
+            discover_via_perplexity(
+                platforms=platform or None,
+                region=region,
+            )
+        )
+
+        progress.update(task, description=f"Found {len(candidates)} candidates from Perplexity")
+
+    if not candidates:
+        console.print("[yellow]No companies found via Perplexity.[/yellow]")
+        return
+
+    # Deduplicate against existing database
+    new_candidates = [
+        c for c in candidates
+        if (c.platform.value, c.slug) not in existing_keys
+    ]
+
+    if not new_candidates:
+        console.print("[yellow]All discovered companies are already in the database.[/yellow]")
+        return
+
+    console.print(f"[green]Perplexity found {len(new_candidates)} new candidates (filtered {len(candidates) - len(new_candidates)} existing)[/green]")
+
+    # Convert to DiscoveredCompany for validation
+    discovered = [
+        DiscoveredCompany(
+            slug=c.slug,
+            name=c.name,
+            platform=c.platform,
+            region_tags=[region] if region else ["discovered"],
+        )
+        for c in new_candidates
+    ]
+
+    # Validate slugs against ATS APIs
+    if not skip_validation:
+        import httpx
+
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            console=console,
+        ) as progress:
+            total = len(discovered)
+            task = progress.add_task(f"Validating {total} slugs...", total=None)
+            validated_count = 0
+
+            async def validate_all() -> None:
+                nonlocal validated_count
+                semaphore = asyncio.Semaphore(min(concurrency, 20))
+                async with httpx.AsyncClient(follow_redirects=True, timeout=10.0) as client:
+                    async def validate_one(c: DiscoveredCompany) -> None:
+                        nonlocal validated_count
+                        await validate_slug(client, semaphore, c)
+                        validated_count += 1
+                        progress.update(task, description=f"Validating slugs ({validated_count}/{total})...")
+
+                    await asyncio.gather(*[validate_one(c) for c in discovered])
+
+            asyncio.run(validate_all())
+
+        valid_before = len(discovered)
+        discovered = [c for c in discovered if c.valid]
+        console.print(f"[dim]Validation: {len(discovered)}/{valid_before} slugs confirmed valid[/dim]")
+
+    if limit:
+        discovered = discovered[:limit]
+
+    _display_and_save_discovered(discovered, region, dry_run, db, existing_keys)
+
+
+def _display_and_save_discovered(
+    discovered: list,
+    region: Optional[str],
+    dry_run: bool,
+    db: CompanyDB,
+    existing_keys: set[tuple[str, str]],
+) -> None:
+    """Display discovered companies and optionally save them."""
     if not discovered:
         console.print("[yellow]No new companies discovered.[/yellow]")
         if region:
-            console.print(f"[dim]Try without --region to see all available companies.[/dim]")
+            console.print("[dim]Try without --region to see all available companies.[/dim]")
         return
 
-    # Show summary
     from rich.table import Table
     from collections import Counter
     platform_counts = Counter(c.platform.value for c in discovered)
@@ -181,7 +298,6 @@ def discover(
     for plat, count in sorted(platform_counts.items()):
         console.print(f"  [cyan]{plat}[/cyan]: {count}")
 
-    # Show sample
     table = Table(title=f"Sample (first {min(20, len(discovered))})")
     table.add_column("Platform", style="cyan")
     table.add_column("Slug", style="green")
@@ -192,7 +308,8 @@ def discover(
     for c in discovered[:20]:
         row = [c.platform.value, c.slug, c.name]
         if region:
-            row.append(", ".join(c.region_tags) if c.region_tags else "-")
+            tags = c.region_tags if hasattr(c, "region_tags") else []
+            row.append(", ".join(tags) if tags else "-")
         table.add_row(*row)
     console.print(table)
 
@@ -200,7 +317,6 @@ def discover(
         console.print("\n[dim]--dry-run: no companies saved.[/dim]")
         return
 
-    # Convert to Company models and save
     if not typer.confirm(f"\nAdd {len(discovered)} companies to your database?"):
         return
 
@@ -209,7 +325,7 @@ def discover(
             slug=c.slug,
             name=c.name,
             platform=c.platform,
-            tags=c.region_tags if c.region_tags else ["discovered"],
+            tags=c.region_tags if hasattr(c, "region_tags") and c.region_tags else ["discovered"],
         )
         for c in discovered
     ]
