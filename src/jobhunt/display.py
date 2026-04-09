@@ -8,7 +8,12 @@ from rich.table import Table
 from jobhunt.models import Job
 
 
-def display_jobs_table(jobs: list[Job], console: Console | None = None, limit: int | None = None) -> None:
+def display_jobs_table(
+    jobs: list[Job],
+    console: Console | None = None,
+    limit: int | None = None,
+    new_job_ids: set[str] | None = None,
+) -> None:
     con = console or Console()
 
     if not jobs:
@@ -20,8 +25,12 @@ def display_jobs_table(jobs: list[Job], console: Console | None = None, limit: i
     if limit and limit < len(jobs):
         title += f" (showing {len(shown)})"
 
-    # Use a compact format: Company | Title | Location | ATS
-    # Then print the URL on a separate indented line for each job
+    # Print NEW summary if applicable
+    if new_job_ids:
+        new_count = sum(1 for j in shown if j.id in new_job_ids)
+        if new_count > 0:
+            con.print(f"[bold green]{new_count} new job{'s' if new_count != 1 else ''} since last search[/bold green]\n", highlight=False)
+
     table = Table(title=title, show_lines=False, expand=True)
     table.add_column("#", style="dim", width=4, justify="right")
     table.add_column("Company", style="cyan", ratio=2, no_wrap=True, overflow="ellipsis")
@@ -30,8 +39,9 @@ def display_jobs_table(jobs: list[Job], console: Console | None = None, limit: i
     table.add_column("ATS", style="dim", width=6)
 
     for i, job in enumerate(shown, 1):
+        row_num = "[bold green]NEW[/bold green]" if new_job_ids and job.id in new_job_ids else str(i)
         table.add_row(
-            str(i),
+            row_num,
             job.company,
             job.title,
             job.location or "-",
