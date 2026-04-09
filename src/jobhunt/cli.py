@@ -25,6 +25,23 @@ app.add_typer(cache_app, name="cache")
 console = Console()
 
 
+def _cache_fetched(cache: JobCache, fetched: list, companies: list[Company]) -> None:
+    """Group fetched jobs by company and cache each group."""
+    from jobhunt.models import Job
+
+    by_company: dict[tuple[str, str], list[Job]] = {}
+    for j in fetched:
+        key = (j.platform, j.company_slug)
+        by_company.setdefault(key, []).append(j)
+    for (plat, slug), jobs in by_company.items():
+        cache.set(ATSPlatform(plat), slug, jobs)
+    # Cache empty results for companies that returned nothing
+    fetched_slugs = {(j.platform, j.company_slug) for j in fetched}
+    for c in companies:
+        if (c.platform, c.slug) not in fetched_slugs:
+            cache.set(c.platform, c.slug, [])
+
+
 @app.command()
 def search(
     keywords: Optional[list[str]] = typer.Argument(None, help="Search keywords (e.g. 'engineer' 'remote')"),
@@ -36,6 +53,7 @@ def search(
     output: Optional[Path] = typer.Option(None, "--output", "-o", help="Export results to JSON file"),
     limit: Optional[int] = typer.Option(None, "--limit", help="Max results to display"),
     no_cache: bool = typer.Option(False, "--no-cache", help="Skip cache"),
+    refresh: bool = typer.Option(False, "--refresh", help="Force re-fetch all companies before displaying"),
     concurrency: int = typer.Option(20, "--concurrency", help="Max concurrent requests"),
 ) -> None:
     """Search for jobs across ATS platforms."""
@@ -65,52 +83,69 @@ def search(
 
         client = JobhuntClient(max_concurrent=concurrency)
         cached_jobs: list[Job] = []
-        to_fetch: list[Company] = []
+        stale_companies: list[Company] = []
+        cold_companies: list[Company] = []
 
-        if cache:
+        if cache and not refresh:
             for c in companies:
                 cached = cache.get(c.platform, c.slug)
                 if cached is not None:
                     cached_jobs.extend(cached)
+                    if cache.is_stale(c.platform, c.slug):
+                        stale_companies.append(c)
                 else:
-                    to_fetch.append(c)
+                    cold_companies.append(c)
         else:
-            to_fetch = companies
+            cold_companies = list(companies)
 
+        # Cold start: blocking fetch with spinner
         fetched: list[Job] = []
-        if to_fetch:
+        if cold_companies:
             with Progress(
                 SpinnerColumn(),
                 TextColumn("[progress.description]{task.description}"),
                 console=console,
             ) as progress:
-                task = progress.add_task(f"Fetching jobs from {len(to_fetch)} companies...", total=None)
+                task = progress.add_task(f"Fetching jobs from {len(cold_companies)} companies...", total=None)
 
                 def on_progress(company: Company, had_jobs: bool) -> None:
                     progress.update(task, description=f"Fetched {company.name} ({company.platform})")
 
-                fetched = await client.fetch_all(to_fetch, PROVIDERS, on_progress=on_progress)
+                fetched = await client.fetch_all(cold_companies, PROVIDERS, on_progress=on_progress)
 
             if cache:
-                # Group fetched jobs by company and cache
-                by_company: dict[tuple[str, str], list[Job]] = {}
-                for j in fetched:
-                    key = (j.platform, j.company_slug)
-                    by_company.setdefault(key, []).append(j)
-                for (plat, slug), jobs in by_company.items():
-                    cache.set(ATSPlatform(plat), slug, jobs)
-                # Also cache empty results for companies that returned nothing
-                fetched_slugs = {(j.platform, j.company_slug) for j in fetched}
-                for c in to_fetch:
-                    if (c.platform, c.slug) not in fetched_slugs:
-                        cache.set(c.platform, c.slug, [])
+                _cache_fetched(cache, fetched, cold_companies)
 
-        return cached_jobs + fetched
+        all_jobs = cached_jobs + fetched
+
+        # Background refresh for stale companies
+        if stale_companies and cache:
+            console.print(f"[dim]Refreshing {len(stale_companies)} stale companies in background...[/dim]")
+            bg_client = JobhuntClient(max_concurrent=50)
+
+            async def background_refresh() -> None:
+                bg_fetched = await bg_client.fetch_all(stale_companies, PROVIDERS)
+                _cache_fetched(cache, bg_fetched, stale_companies)
+                console.print(f"[green]\u2713 Cache refreshed. Run again for latest results.[/green]")
+
+            await background_refresh()
+
+        return all_jobs
 
     all_jobs = asyncio.run(run())
     results = filter_jobs(all_jobs, query)
 
-    display_jobs_table(results, console=console, limit=limit)
+    # Fingerprint integration for NEW badges
+    from jobhunt.fingerprint import SearchFingerprint
+    new_ids: set[str] | None = None
+    if query.keywords and cache is not None:
+        fp = SearchFingerprint()
+        current_ids = {j.id for j in results}
+        new_ids = fp.get_new_job_ids(query.keywords, current_ids)
+        display_jobs_table(results, console=console, limit=limit, new_job_ids=new_ids)
+        fp.update(query.keywords, current_ids)
+    else:
+        display_jobs_table(results, console=console, limit=limit)
 
     if output:
         export_json(results, output)
