@@ -23,6 +23,9 @@ env/
 # Claude Code local state
 .claude/
 
+# Superpowers docs (private specs and plans)
+docs/superpowers/
+
 # Pro (private — separate repo)
 src/pro/
 
