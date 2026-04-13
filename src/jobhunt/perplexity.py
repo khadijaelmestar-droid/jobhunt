@@ -75,6 +75,18 @@ _REGION_HINTS: dict[str, str] = {
     "us": "Focus on companies based in the United States.",
     "uk": "Focus on companies based in the United Kingdom.",
     "remote": "Focus on companies that offer remote positions or are remote-first.",
+    "mena": "Focus on companies based in the Middle East and North Africa (Morocco, Tunisia, Egypt, UAE, Saudi Arabia, Jordan, Lebanon, Bahrain, Qatar, Oman, Kuwait). Include all industries: tech, banking, telecom, BPO, manufacturing, retail, logistics.",
+    "morocco": "Focus on companies based in Morocco (Casablanca, Rabat, Marrakech, Tangier, Agadir). Include all industries.",
+    "uae": "Focus on companies based in the United Arab Emirates (Dubai, Abu Dhabi, Sharjah). Include all industries.",
+    "egypt": "Focus on companies based in Egypt (Cairo, Alexandria). Include all industries.",
+    "saudi": "Focus on companies based in Saudi Arabia (Riyadh, Jeddah, Dammam). Include all industries.",
+    "tunisia": "Focus on companies based in Tunisia (Tunis, Sfax). Include all industries.",
+    "jordan": "Focus on companies based in Jordan (Amman). Include all industries.",
+    "lebanon": "Focus on companies based in Lebanon (Beirut). Include all industries.",
+    "bahrain": "Focus on companies based in Bahrain. Include all industries.",
+    "qatar": "Focus on companies based in Qatar (Doha). Include all industries.",
+    "oman": "Focus on companies based in Oman (Muscat). Include all industries.",
+    "kuwait": "Focus on companies based in Kuwait. Include all industries.",
 }
 
 DISCOVERY_SCHEMA = {
