@@ -100,6 +100,41 @@ REGION_KEYWORDS: dict[str, list[str]] = {
         "Remote", "Anywhere", "Distributed", "Work from home",
         "Worldwide", "Global",
     ],
+    "mena": [
+        "Morocco", "Casablanca", "Rabat", "Marrakech", "Tangier", "Agadir", "Fez", "Meknes",
+        "Tunisia", "Tunis", "Sfax",
+        "Egypt", "Cairo", "Alexandria", "Giza",
+        "UAE", "Dubai", "Abu Dhabi", "Sharjah", "United Arab Emirates",
+        "Saudi", "Saudi Arabia", "Riyadh", "Jeddah", "Dammam",
+        "Jordan", "Amman",
+        "Lebanon", "Beirut",
+        "Bahrain", "Manama",
+        "Qatar", "Doha",
+        "Oman", "Muscat",
+        "Kuwait", "Kuwait City",
+        "MENA", "Middle East", "North Africa",
+    ],
+    "morocco": [
+        "Morocco", "Casablanca", "Rabat", "Marrakech", "Tangier", "Agadir", "Fez", "Meknes",
+    ],
+    "uae": [
+        "UAE", "Dubai", "Abu Dhabi", "Sharjah", "United Arab Emirates",
+    ],
+    "egypt": [
+        "Egypt", "Cairo", "Alexandria", "Giza",
+    ],
+    "saudi": [
+        "Saudi", "Saudi Arabia", "Riyadh", "Jeddah", "Dammam",
+    ],
+    "tunisia": [
+        "Tunisia", "Tunis", "Sfax",
+    ],
+    "jordan": ["Jordan", "Amman"],
+    "lebanon": ["Lebanon", "Beirut"],
+    "bahrain": ["Bahrain", "Manama"],
+    "qatar": ["Qatar", "Doha"],
+    "oman": ["Oman", "Muscat"],
+    "kuwait": ["Kuwait", "Kuwait City"],
 }
 
 
