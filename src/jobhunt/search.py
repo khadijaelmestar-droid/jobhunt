@@ -2,6 +2,25 @@ from __future__ import annotations
 
 from jobhunt.models import Job, SearchQuery
 
+# Expand location tokens to also match major cities / country variants
+_LOCATION_ALIASES: dict[str, list[str]] = {
+    "morocco": ["casablanca", "rabat", "marrakech", "tangier", "agadir", "fes", "fez", "meknes", "oujda", "tetouan", "ma"],
+    "uae": ["dubai", "abu dhabi", "sharjah", "ajman", "ae"],
+    "egypt": ["cairo", "alexandria", "giza", "eg"],
+    "saudi": ["riyadh", "jeddah", "dammam", "mecca", "medina", "sa"],
+    "tunisia": ["tunis", "sfax", "tn"],
+    "jordan": ["amman", "jo"],
+    "lebanon": ["beirut", "lb"],
+    "bahrain": ["manama", "bh"],
+    "qatar": ["doha", "qa"],
+    "oman": ["muscat", "om"],
+    "kuwait": ["kuwait city", "kw"],
+    "mena": ["casablanca", "dubai", "cairo", "riyadh", "tunis", "amman", "beirut", "doha", "muscat", "manama", "morocco", "uae", "egypt", "saudi", "tunisia", "jordan", "lebanon", "bahrain", "qatar", "oman", "kuwait"],
+    "eu": ["amsterdam", "berlin", "paris", "madrid", "barcelona", "rome", "milan", "warsaw", "prague", "vienna", "stockholm", "oslo", "copenhagen", "helsinki", "brussels", "lisbon", "athens"],
+    "uk": ["london", "manchester", "birmingham", "edinburgh", "glasgow", "bristol", "gb"],
+    "us": ["new york", "san francisco", "seattle", "austin", "boston", "chicago", "los angeles", "denver", "us", "usa"],
+}
+
 
 def filter_jobs(jobs: list[Job], query: SearchQuery) -> list[Job]:
     results = jobs
@@ -36,7 +55,11 @@ def _matches_keywords(job: Job, keywords: list[str]) -> bool:
 def _matches_location(job: Job, location: str) -> bool:
     if not job.location:
         return False
-    return location.lower() in job.location.lower()
+    job_loc = job.location.lower()
+    loc = location.lower()
+    if loc in job_loc:
+        return True
+    return any(alias in job_loc for alias in _LOCATION_ALIASES.get(loc, []))
 
 
 def _matches_field(field: str | None, value: str) -> bool:
