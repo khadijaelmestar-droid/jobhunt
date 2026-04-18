@@ -25,6 +25,7 @@ class ATSPlatform(StrEnum):
     ICIMS = "icims"
     TALEO = "taleo"
     SUCCESSFACTORS = "successfactors"
+    LINKEDIN = "linkedin"
 
 
 class Job(BaseModel):

@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
 import re
 from dataclasses import dataclass
 
-from jobhunt.models import ATSPlatform
+from jobhunt.models import ATSPlatform, Job
 
 logger = logging.getLogger(__name__)
 
@@ -321,3 +322,113 @@ async def discover_via_perplexity_deep(
                 )
 
     return all_candidates
+
+
+_LINKEDIN_JOB_SCHEMA = {
+    "type": "json_schema",
+    "json_schema": {
+        "name": "linkedin_jobs",
+        "schema": {
+            "type": "object",
+            "properties": {
+                "jobs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {"type": "string"},
+                            "company": {"type": "string"},
+                            "url": {"type": "string"},
+                            "location": {"type": "string"},
+                            "remote": {"type": "boolean"},
+                            "description": {"type": "string"},
+                        },
+                        "required": ["title", "company", "url"],
+                    },
+                },
+            },
+            "required": ["jobs"],
+        },
+    },
+}
+
+
+async def search_linkedin_jobs(
+    keywords: list[str],
+    location: str | None = None,
+    remote_only: bool = False,
+    region: str | None = None,
+    count: int = 20,
+    model: str = "sonar",
+    api_key: str | None = None,
+) -> list[Job]:
+    """Search LinkedIn job postings via Perplexity and return as Job objects."""
+    import httpx
+
+    key = api_key or _get_api_key()
+    if not key:
+        return []
+
+    keywords_str = " ".join(keywords) if keywords else "software engineer"
+
+    region_hint = _REGION_HINTS.get(region, f"in {region}") if region else ""
+    location_hint = f"in {location}" if location else ""
+    remote_hint = "remote positions only" if remote_only else ""
+
+    context_parts = [p for p in [region_hint, location_hint, remote_hint] if p]
+    context = ". ".join(context_parts) + "." if context_parts else ""
+
+    prompt = (
+        f"Find {count} current active job postings on LinkedIn matching: {keywords_str}. "
+        f"{context} "
+        f"Return only real LinkedIn job URLs (linkedin.com/jobs/view/...). "
+        f"For each job include: title, company name, direct LinkedIn job URL, location, "
+        f"whether it is remote, and a one-sentence description."
+    ).strip()
+
+    async with httpx.AsyncClient(timeout=60.0) as client:
+        resp = await client.post(
+            f"{PERPLEXITY_BASE_URL}/chat/completions",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": "You are a job search assistant. Return accurate, current LinkedIn job listings."},
+                    {"role": "user", "content": prompt},
+                ],
+                "response_format": _LINKEDIN_JOB_SCHEMA,
+            },
+        )
+        resp.raise_for_status()
+        data = resp.json()
+
+    content = data["choices"][0]["message"]["content"]
+    parsed = json.loads(content)
+
+    jobs: list[Job] = []
+    for item in parsed.get("jobs", []):
+        url = item.get("url", "").strip()
+        company = item.get("company", "").strip()
+        title = item.get("title", "").strip()
+        if not url or not company or not title:
+            continue
+        # Only keep actual LinkedIn URLs
+        if "linkedin.com" not in url:
+            continue
+        slug = re.sub(r"[^a-z0-9]+", "-", company.lower()).strip("-")
+        job_id = hashlib.md5(url.encode()).hexdigest()[:12]
+        jobs.append(
+            Job(
+                id=job_id,
+                title=title,
+                company=company,
+                company_slug=slug,
+                platform=ATSPlatform.LINKEDIN,
+                location=item.get("location") or None,
+                is_remote=bool(item.get("remote", False)),
+                url=url,
+                description_snippet=item.get("description") or None,
+            )
+        )
+
+    return jobs
