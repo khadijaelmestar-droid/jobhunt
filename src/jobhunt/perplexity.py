@@ -7,6 +7,7 @@ import json
 import logging
 import os
 import re
+import urllib.parse
 from dataclasses import dataclass
 
 from jobhunt.models import ATSPlatform, Job
@@ -407,16 +408,16 @@ async def search_linkedin_jobs(
 
     jobs: list[Job] = []
     for item in parsed.get("jobs", []):
-        url = item.get("url", "").strip()
         company = item.get("company", "").strip()
         title = item.get("title", "").strip()
-        if not url or not company or not title:
+        if not company or not title:
             continue
-        # Only keep actual LinkedIn URLs
-        if "linkedin.com" not in url:
-            continue
+        # Build a real LinkedIn search URL instead of using Perplexity-generated
+        # job IDs, which are fabricated and always return 404.
+        search_q = urllib.parse.quote_plus(f"{title} {company}")
+        search_url = f"https://www.linkedin.com/jobs/search/?keywords={search_q}"
         slug = re.sub(r"[^a-z0-9]+", "-", company.lower()).strip("-")
-        job_id = hashlib.md5(url.encode()).hexdigest()[:12]
+        job_id = hashlib.md5(f"{title}:{slug}".encode()).hexdigest()[:12]
         jobs.append(
             Job(
                 id=job_id,
@@ -426,7 +427,7 @@ async def search_linkedin_jobs(
                 platform=ATSPlatform.LINKEDIN,
                 location=item.get("location") or None,
                 is_remote=bool(item.get("remote", False)),
-                url=url,
+                url=search_url,
                 description_snippet=item.get("description") or None,
             )
         )
